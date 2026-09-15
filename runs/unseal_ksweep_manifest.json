@@ -1,0 +1,81 @@
+{
+  "authorization": "A-15-2",
+  "purpose": "S2/S3 平齐是否随采样率持续的防御分析",
+  "count": 18,
+  "scope_regex": "cem_A_G[1-3]_S[1-3]_D0_k(?:5|20)\\.jsonl",
+  "rho_objects_touched": false,
+  "files": [
+    {
+      "path": "runs/sealed/cem_A_G1_S1_D0_k20.jsonl",
+      "sha256": "f2880aa2a55204ee3c476a18442c71cd0e3ea1be098242abc890e428e4c75806"
+    },
+    {
+      "path": "runs/sealed/cem_A_G1_S1_D0_k5.jsonl",
+      "sha256": "e0a72e97484fa28d2374b635a2723d1fc719f25a3047a0b81ec9081a600e5c34"
+    },
+    {
+      "path": "runs/sealed/cem_A_G1_S2_D0_k20.jsonl",
+      "sha256": "3faf866c5cbe488284f9b081839ce5bf2f5573d53dd837f77f01879dc105f329"
+    },
+    {
+      "path": "runs/sealed/cem_A_G1_S2_D0_k5.jsonl",
+      "sha256": "c059e1706f18d5e9f5b45ded42358ac18f9439e072d7968bc9e0110942c03481"
+    },
+    {
+      "path": "runs/sealed/cem_A_G1_S3_D0_k20.jsonl",
+      "sha256": "fe9e567ed752ed56ddf293dfcd659c5dac5af8305969c679f68797464e60b2d5"
+    },
+    {
+      "path": "runs/sealed/cem_A_G1_S3_D0_k5.jsonl",
+      "sha256": "93c6be4610128a0f7f155a59ea8e06a1e86c0005dc0fd50133c185b2adee9aa8"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S1_D0_k20.jsonl",
+      "sha256": "1080c2e57604c05c7fcbe7b934395b1dd757c5d323039b6e59a8b85f8db813ea"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S1_D0_k5.jsonl",
+      "sha256": "a101c3ad6be6935fc39f5eac6217f889185260af5b831d5b6dbc47d15e31f9c1"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S2_D0_k20.jsonl",
+      "sha256": "a47320f483d205824e837d294aa4992d508b9bd647f31e838a4540ce9f0680df"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S2_D0_k5.jsonl",
+      "sha256": "429077f0d83395526eeae88d88c8d4014c80d868c5fb9f982d1d1d632b3e4521"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S3_D0_k20.jsonl",
+      "sha256": "b1ed262f5713162fbe6b719313f6468f785575ea6fcb11920dab9d5c0d3de997"
+    },
+    {
+      "path": "runs/sealed/cem_A_G2_S3_D0_k5.jsonl",
+      "sha256": "dc533036eb0a27b69b10e2d1bd8da0b9c6a375d5b4e2c89c2975bef54c34d819"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S1_D0_k20.jsonl",
+      "sha256": "414f2fb6db7422af76a1ed50c72615f9c91e06e343c9c6232c91a0c2b255750c"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S1_D0_k5.jsonl",
+      "sha256": "6e1a8a00fa52b8b71497476de7a2357f248b5ae04e185f385d2a26becf86d71a"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S2_D0_k20.jsonl",
+      "sha256": "4550183469f75d99c378585266964bec063ad87329ac3c02d9e11de5bdcf423c"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S2_D0_k5.jsonl",
+      "sha256": "d3ba2af909532a635736d442885947d7581c793b2b1e47da63022a60dc475823"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S3_D0_k20.jsonl",
+      "sha256": "21327006e24496cd1fb8a5bd3b397cea82f77f3e9bc7dfb8623b0dc7397085eb"
+    },
+    {
+      "path": "runs/sealed/cem_A_G3_S3_D0_k5.jsonl",
+      "sha256": "733428b24249febbfc2d34a149cd2e4e1aca4702351d452ced8a3f0d84e45a0f"
+    }
+  ]
+}

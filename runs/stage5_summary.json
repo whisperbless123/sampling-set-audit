@@ -1,0 +1,87 @@
+{
+  "completed": [
+    {
+      "file": "runs/d0_G1_S1_k10_N100.jsonl",
+      "graph_family": "G1",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/d0_G1_S2_k10_N100_muLIT.jsonl.VOID",
+      "graph_family": "G1",
+      "mu_variant": "LIT",
+      "runs": 70,
+      "void": true,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/d0_G1_S2_k10_N100_muREV.jsonl",
+      "graph_family": "G1",
+      "mu_variant": "REV",
+      "runs": 70,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/d0_G1_S3_k10_N100.jsonl",
+      "graph_family": "G1",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S3"
+    },
+    {
+      "file": "runs/d0_G2_S1_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/d0_G2_S2_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/d0_G2_S3_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S3"
+    },
+    {
+      "file": "runs/d0_G3_S1_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/d0_G3_S2_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/d0_G3_S3_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 70,
+      "signal_family": "S3"
+    }
+  ],
+  "completed_logical_cells": 9,
+  "completed_physical_cells": 10,
+  "flags": [],
+  "gate_passed": true,
+  "git_commit": "912d394d949678c01fac3060dc92335f84d986cb",
+  "hostname": "DESKTOP-O16RHSN",
+  "interrupted_not_started": [],
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

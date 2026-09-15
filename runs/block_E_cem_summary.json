@@ -1,0 +1,19 @@
+{
+  "block": "E",
+  "method": "CEM",
+  "new_runs": 180,
+  "E500_runs": 90,
+  "E8000_runs": 90,
+  "E2000_anchor": "reuse existing D0 CEM files; not rerun",
+  "eval_counts_exact": true,
+  "sealed_files": [
+    "runs/sealed/cem_E_G1_S1_D0_k10_N100_E500.jsonl",
+    "runs/sealed/cem_E_G1_S1_D0_k10_N100_E8000.jsonl",
+    "runs/sealed/cem_E_G2_S2_D0_k10_N100_E500.jsonl",
+    "runs/sealed/cem_E_G2_S2_D0_k10_N100_E8000.jsonl",
+    "runs/sealed/cem_E_G3_S3_D0_k10_N100_E500.jsonl",
+    "runs/sealed/cem_E_G3_S3_D0_k10_N100_E8000.jsonl"
+  ],
+  "performance_values_disclosed": false,
+  "wall_seconds": 453.01625880005304
+}

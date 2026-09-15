@@ -1,0 +1,6965 @@
+{
+  "authorization": "A-24 item 1",
+  "gate_commit": "1da95590313fd321f6e60695aff8db0abc5faeaa",
+  "risk_definition": "mu^2 tr(A^-1 L Sigma L A^-1) + sigma^2 tr(A^-1 D A^-1)",
+  "sigma2_definition": "E[per-signal RMS^2]/100 = tr(Sigma)/(N*100) at 20 dB",
+  "normalization": "none",
+  "mc_bridge": {
+    "samples_per_case": 50000,
+    "relative_tolerance": 0.03,
+    "completed_before_search": true,
+    "cases": [
+      {
+        "graph_family": "G1",
+        "graph_seed": 0,
+        "sample_seed": 24100,
+        "samples": [
+          10,
+          14,
+          16,
+          17,
+          35,
+          38,
+          50,
+          74,
+          79,
+          93
+        ],
+        "mc_seed": 24200,
+        "analytic_risk": 14.936125123650164,
+        "mc_risk": 14.942697876335957,
+        "relative_deviation": 0.00044005741993856346,
+        "passed": true
+      },
+      {
+        "graph_family": "G1",
+        "graph_seed": 1,
+        "sample_seed": 24101,
+        "samples": [
+          11,
+          17,
+          37,
+          42,
+          45,
+          54,
+          59,
+          67,
+          74,
+          98
+        ],
+        "mc_seed": 24201,
+        "analytic_risk": 16.2964646200648,
+        "mc_risk": 16.30895273300463,
+        "relative_deviation": 0.000766308106143174,
+        "passed": true
+      },
+      {
+        "graph_family": "G2",
+        "graph_seed": 0,
+        "sample_seed": 24200,
+        "samples": [
+          6,
+          13,
+          15,
+          21,
+          43,
+          58,
+          64,
+          74,
+          75,
+          96
+        ],
+        "mc_seed": 24300,
+        "analytic_risk": 16.711246987964568,
+        "mc_risk": 16.7028856827292,
+        "relative_deviation": 0.0005003399950578305,
+        "passed": true
+      },
+      {
+        "graph_family": "G2",
+        "graph_seed": 1,
+        "sample_seed": 24201,
+        "samples": [
+          5,
+          9,
+          26,
+          28,
+          32,
+          36,
+          39,
+          57,
+          61,
+          89
+        ],
+        "mc_seed": 24301,
+        "analytic_risk": 19.644949010179545,
+        "mc_risk": 19.6740553076836,
+        "relative_deviation": 0.0014816173607257379,
+        "passed": true
+      },
+      {
+        "graph_family": "G3",
+        "graph_seed": 0,
+        "sample_seed": 24300,
+        "samples": [
+          3,
+          8,
+          32,
+          38,
+          52,
+          57,
+          64,
+          68,
+          76,
+          98
+        ],
+        "mc_seed": 24400,
+        "analytic_risk": 16.086607506630532,
+        "mc_risk": 16.095885219924032,
+        "relative_deviation": 0.0005767352308232634,
+        "passed": true
+      },
+      {
+        "graph_family": "G3",
+        "graph_seed": 1,
+        "sample_seed": 24301,
+        "samples": [
+          12,
+          20,
+          21,
+          28,
+          35,
+          48,
+          61,
+          63,
+          68,
+          93
+        ],
+        "mc_seed": 24401,
+        "analytic_risk": 16.3186506458549,
+        "mc_risk": 16.300702896569508,
+        "relative_deviation": 0.0010998304746446341,
+        "passed": true
+      }
+    ]
+  },
+  "cells": [
+    {
+      "cell": "G1_S2_D0_k10_N100",
+      "mu": 0.01,
+      "oracle_label": "one-swap local-search risk oracle",
+      "best_deployment_method": "B3c",
+      "method_cross_graph_mean_risk": {
+        "Random": 15.983572462390208,
+        "Degree": 16.21728155255119,
+        "B3a": 15.447389633858824,
+        "B3b": 15.981252139731192,
+        "B3c": 14.865395560501721,
+        "CEM": 15.87266119256272
+      },
+      "oracle_cross_graph_mean_risk": 14.84053090480764,
+      "oracle_gain_unnormalized": 0.024864655694083915,
+      "readings": {
+        "ddof_0": {
+          "delta": 3.719420490132448,
+          "exit": "A"
+        },
+        "ddof_1": {
+          "delta": 3.920613441572788,
+          "exit": "A"
+        }
+      },
+      "DDOF_SPLIT": false,
+      "exit": "A",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            0,
+            24,
+            31,
+            33,
+            37,
+            38,
+            45,
+            48,
+            56,
+            73
+          ],
+          "oracle_risk": 14.116537907941032,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.471342799952254,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.169106770170842
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.224271225412064
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.153755507758971
+                }
+              ],
+              "per_graph_risk": 15.182377834447292
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    9,
+                    11,
+                    12,
+                    24,
+                    32,
+                    33,
+                    35,
+                    44,
+                    61
+                  ],
+                  "risk": 15.351426145271649
+                }
+              ],
+              "per_graph_risk": 15.351426145271649
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    25,
+                    31,
+                    37,
+                    38,
+                    45,
+                    48,
+                    50,
+                    56,
+                    86
+                  ],
+                  "risk": 14.744431847820449
+                }
+              ],
+              "per_graph_risk": 14.744431847820449
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    6,
+                    12,
+                    20,
+                    24,
+                    32,
+                    33,
+                    40,
+                    61,
+                    73
+                  ],
+                  "risk": 15.147107659721177
+                }
+              ],
+              "per_graph_risk": 15.147107659721177
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    5,
+                    24,
+                    32,
+                    33,
+                    37,
+                    38,
+                    45,
+                    48,
+                    86
+                  ],
+                  "risk": 14.125667880058979
+                }
+              ],
+              "per_graph_risk": 14.125667880058979
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    19,
+                    27,
+                    38,
+                    39,
+                    45,
+                    46,
+                    69,
+                    81,
+                    87,
+                    98
+                  ],
+                  "risk": 14.709228215036896
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    27,
+                    37,
+                    49,
+                    58,
+                    64,
+                    67,
+                    73,
+                    83,
+                    88
+                  ],
+                  "risk": 15.05694586887041
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    4,
+                    12,
+                    16,
+                    23,
+                    36,
+                    43,
+                    57,
+                    64,
+                    82,
+                    96
+                  ],
+                  "risk": 15.154111600875469
+                }
+              ],
+              "per_graph_risk": 14.97342856159426
+            }
+          }
+        },
+        {
+          "graph_seed": 1,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            10,
+            18,
+            20,
+            23,
+            30,
+            46,
+            55,
+            60,
+            62,
+            90
+          ],
+          "oracle_risk": 14.363011279726912,
+          "local_search_iterations": 10,
+          "risk_evaluations": 9901,
+          "wall_seconds": 5.043461499968544,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.27956879328276
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.077473573233785
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.83903373406934
+                }
+              ],
+              "per_graph_risk": 16.065358700195294
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    16,
+                    18,
+                    29,
+                    30,
+                    39,
+                    43,
+                    46,
+                    54,
+                    89
+                  ],
+                  "risk": 16.32981062850887
+                }
+              ],
+              "per_graph_risk": 16.32981062850887
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    10,
+                    13,
+                    23,
+                    24,
+                    49,
+                    55,
+                    60,
+                    62,
+                    90,
+                    93
+                  ],
+                  "risk": 15.080419924956528
+                }
+              ],
+              "per_graph_risk": 15.080419924956528
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    18,
+                    30,
+                    39,
+                    46,
+                    54,
+                    68,
+                    82,
+                    88,
+                    97
+                  ],
+                  "risk": 15.911159460062535
+                }
+              ],
+              "per_graph_risk": 15.911159460062535
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    10,
+                    18,
+                    20,
+                    23,
+                    30,
+                    46,
+                    55,
+                    60,
+                    62,
+                    90
+                  ],
+                  "risk": 14.363011279726912
+                }
+              ],
+              "per_graph_risk": 14.363011279726912
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    3,
+                    12,
+                    13,
+                    31,
+                    35,
+                    39,
+                    52,
+                    55,
+                    74,
+                    83
+                  ],
+                  "risk": 15.496056427109268
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    2,
+                    17,
+                    19,
+                    45,
+                    53,
+                    67,
+                    79,
+                    84,
+                    93,
+                    95
+                  ],
+                  "risk": 16.0772137672197
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    18,
+                    26,
+                    27,
+                    31,
+                    45,
+                    55,
+                    68,
+                    73,
+                    82,
+                    95
+                  ],
+                  "risk": 15.20863334578875
+                }
+              ],
+              "per_graph_risk": 15.593967846705906
+            }
+          }
+        },
+        {
+          "graph_seed": 2,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            4,
+            11,
+            20,
+            29,
+            37,
+            38,
+            42,
+            44,
+            49,
+            81
+          ],
+          "oracle_risk": 14.755685434560693,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.585267899907194,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.45352314180464
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.79925740968827
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.83577718413876
+                }
+              ],
+              "per_graph_risk": 15.696185911877222
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    10,
+                    20,
+                    33,
+                    41,
+                    42,
+                    44,
+                    50,
+                    57,
+                    72
+                  ],
+                  "risk": 15.976308939295794
+                }
+              ],
+              "per_graph_risk": 15.976308939295794
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    11,
+                    29,
+                    37,
+                    38,
+                    47,
+                    48,
+                    49,
+                    53,
+                    81
+                  ],
+                  "risk": 15.343878668811898
+                }
+              ],
+              "per_graph_risk": 15.343878668811898
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    20,
+                    30,
+                    33,
+                    41,
+                    42,
+                    44,
+                    57,
+                    66,
+                    72
+                  ],
+                  "risk": 15.846016814511396
+                }
+              ],
+              "per_graph_risk": 15.846016814511396
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    11,
+                    20,
+                    29,
+                    38,
+                    42,
+                    44,
+                    49,
+                    72,
+                    81
+                  ],
+                  "risk": 14.7897822819571
+                }
+              ],
+              "per_graph_risk": 14.7897822819571
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    17,
+                    20,
+                    32,
+                    35,
+                    36,
+                    57,
+                    79,
+                    85,
+                    86,
+                    95
+                  ],
+                  "risk": 16.033320769457074
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    2,
+                    7,
+                    12,
+                    16,
+                    45,
+                    50,
+                    59,
+                    60,
+                    95
+                  ],
+                  "risk": 15.832053545385229
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    1,
+                    24,
+                    25,
+                    29,
+                    72,
+                    77,
+                    81,
+                    90,
+                    96,
+                    97
+                  ],
+                  "risk": 15.592272874429998
+                }
+              ],
+              "per_graph_risk": 15.819215729757433
+            }
+          }
+        },
+        {
+          "graph_seed": 3,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            4,
+            6,
+            13,
+            17,
+            21,
+            27,
+            40,
+            55,
+            56,
+            65
+          ],
+          "oracle_risk": 15.493065101389647,
+          "local_search_iterations": 10,
+          "risk_evaluations": 9901,
+          "wall_seconds": 5.029710900038481,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.372582507546863
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.230107980137753
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.243697440945123
+                }
+              ],
+              "per_graph_risk": 16.282129309543247
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    21,
+                    36,
+                    40,
+                    43,
+                    66,
+                    68,
+                    69,
+                    91,
+                    93
+                  ],
+                  "risk": 16.579783581140582
+                }
+              ],
+              "per_graph_risk": 16.579783581140582
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    10,
+                    12,
+                    13,
+                    27,
+                    55,
+                    56,
+                    65,
+                    77,
+                    81
+                  ],
+                  "risk": 15.900899688703223
+                }
+              ],
+              "per_graph_risk": 15.900899688703223
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    8,
+                    36,
+                    40,
+                    43,
+                    69,
+                    73,
+                    91,
+                    93,
+                    98
+                  ],
+                  "risk": 16.27960408230562
+                }
+              ],
+              "per_graph_risk": 16.27960408230562
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    6,
+                    13,
+                    27,
+                    40,
+                    43,
+                    55,
+                    56,
+                    65,
+                    93
+                  ],
+                  "risk": 15.531448819484499
+                }
+              ],
+              "per_graph_risk": 15.531448819484499
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    10,
+                    19,
+                    51,
+                    53,
+                    57,
+                    62,
+                    72,
+                    84,
+                    92,
+                    95
+                  ],
+                  "risk": 16.43496054956124
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    6,
+                    38,
+                    39,
+                    46,
+                    53,
+                    71,
+                    80,
+                    85,
+                    99
+                  ],
+                  "risk": 16.41167665128056
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    11,
+                    15,
+                    17,
+                    28,
+                    42,
+                    62,
+                    65,
+                    80,
+                    89,
+                    95
+                  ],
+                  "risk": 16.196747192456517
+                }
+              ],
+              "per_graph_risk": 16.347794797766102
+            }
+          }
+        },
+        {
+          "graph_seed": 4,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            1,
+            16,
+            32,
+            35,
+            45,
+            50,
+            51,
+            53,
+            71,
+            93
+          ],
+          "oracle_risk": 15.01633607451538,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.473314400063828,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.55052040407477
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.557653105939675
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.63778930611763
+                }
+              ],
+              "per_graph_risk": 16.58198760537736
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    19,
+                    27,
+                    35,
+                    42,
+                    45,
+                    70,
+                    75,
+                    77,
+                    82
+                  ],
+                  "risk": 16.698853462966216
+                }
+              ],
+              "per_graph_risk": 16.698853462966216
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    14,
+                    16,
+                    50,
+                    51,
+                    53,
+                    60,
+                    71,
+                    89,
+                    93,
+                    95
+                  ],
+                  "risk": 15.610240394402181
+                }
+              ],
+              "per_graph_risk": 15.610240394402181
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    6,
+                    19,
+                    32,
+                    35,
+                    36,
+                    42,
+                    45,
+                    82,
+                    91
+                  ],
+                  "risk": 16.50055434860489
+                }
+              ],
+              "per_graph_risk": 16.50055434860489
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    16,
+                    35,
+                    42,
+                    45,
+                    50,
+                    51,
+                    53,
+                    71,
+                    93
+                  ],
+                  "risk": 15.031254980658167
+                }
+              ],
+              "per_graph_risk": 15.031254980658167
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    12,
+                    17,
+                    38,
+                    50,
+                    56,
+                    60,
+                    70,
+                    78,
+                    84,
+                    98
+                  ],
+                  "risk": 16.41487651253382
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    5,
+                    26,
+                    54,
+                    62,
+                    64,
+                    76,
+                    82,
+                    90,
+                    99
+                  ],
+                  "risk": 16.48904120849263
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    4,
+                    16,
+                    19,
+                    22,
+                    30,
+                    36,
+                    42,
+                    51,
+                    56,
+                    93
+                  ],
+                  "risk": 15.58552362583671
+                }
+              ],
+              "per_graph_risk": 16.163147115621054
+            }
+          }
+        },
+        {
+          "graph_seed": 5,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            26,
+            40,
+            62,
+            63,
+            66,
+            68,
+            77,
+            81,
+            89,
+            93
+          ],
+          "oracle_risk": 15.485960814630731,
+          "local_search_iterations": 8,
+          "risk_evaluations": 8101,
+          "wall_seconds": 4.142087299958803,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.45666009279081
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.628372490289095
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.552285943948686
+                }
+              ],
+              "per_graph_risk": 16.545772842342867
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    5,
+                    9,
+                    10,
+                    16,
+                    52,
+                    58,
+                    62,
+                    86,
+                    89
+                  ],
+                  "risk": 16.617622884950112
+                }
+              ],
+              "per_graph_risk": 16.617622884950112
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    25,
+                    26,
+                    40,
+                    53,
+                    63,
+                    66,
+                    81,
+                    82,
+                    85,
+                    96
+                  ],
+                  "risk": 15.983501405846065
+                }
+              ],
+              "per_graph_risk": 15.983501405846065
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    5,
+                    9,
+                    18,
+                    52,
+                    56,
+                    62,
+                    77,
+                    89,
+                    99
+                  ],
+                  "risk": 16.438297066870714
+                }
+              ],
+              "per_graph_risk": 16.438297066870714
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    5,
+                    26,
+                    40,
+                    52,
+                    62,
+                    66,
+                    82,
+                    89,
+                    93
+                  ],
+                  "risk": 15.54136365120774
+                }
+              ],
+              "per_graph_risk": 15.54136365120774
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    7,
+                    13,
+                    35,
+                    39,
+                    52,
+                    59,
+                    62,
+                    63,
+                    74,
+                    81
+                  ],
+                  "risk": 16.33961739705142
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    16,
+                    27,
+                    40,
+                    45,
+                    51,
+                    67,
+                    73,
+                    82,
+                    90,
+                    98
+                  ],
+                  "risk": 16.379123419153107
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    6,
+                    15,
+                    22,
+                    28,
+                    33,
+                    39,
+                    43,
+                    52,
+                    57,
+                    86
+                  ],
+                  "risk": 16.61743279926095
+                }
+              ],
+              "per_graph_risk": 16.44539120515516
+            }
+          }
+        },
+        {
+          "graph_seed": 6,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            9,
+            17,
+            29,
+            32,
+            44,
+            47,
+            49,
+            52,
+            74,
+            77
+          ],
+          "oracle_risk": 14.539101758106003,
+          "local_search_iterations": 6,
+          "risk_evaluations": 6301,
+          "wall_seconds": 3.2062959999311715,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.35528982977531
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.489771659453558
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.788331012116743
+                }
+              ],
+              "per_graph_risk": 15.544464167115203
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    9,
+                    14,
+                    27,
+                    32,
+                    45,
+                    52,
+                    62,
+                    73,
+                    90
+                  ],
+                  "risk": 15.761783915208948
+                }
+              ],
+              "per_graph_risk": 15.761783915208948
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    17,
+                    29,
+                    35,
+                    42,
+                    44,
+                    47,
+                    49,
+                    68,
+                    74,
+                    77
+                  ],
+                  "risk": 15.158548295903223
+                }
+              ],
+              "per_graph_risk": 15.158548295903223
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    9,
+                    10,
+                    15,
+                    32,
+                    45,
+                    52,
+                    86,
+                    90,
+                    96
+                  ],
+                  "risk": 15.623092509785028
+                }
+              ],
+              "per_graph_risk": 15.623092509785028
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    9,
+                    23,
+                    32,
+                    44,
+                    45,
+                    47,
+                    49,
+                    52,
+                    74,
+                    77
+                  ],
+                  "risk": 14.563571030786328
+                }
+              ],
+              "per_graph_risk": 14.563571030786328
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    18,
+                    25,
+                    30,
+                    52,
+                    55,
+                    56,
+                    57,
+                    61,
+                    99
+                  ],
+                  "risk": 15.620570835412115
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    11,
+                    13,
+                    37,
+                    49,
+                    58,
+                    62,
+                    69,
+                    80,
+                    90,
+                    91
+                  ],
+                  "risk": 15.679346806501274
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    12,
+                    17,
+                    18,
+                    29,
+                    40,
+                    63,
+                    67,
+                    87,
+                    96
+                  ],
+                  "risk": 15.656043059388978
+                }
+              ],
+              "per_graph_risk": 15.651986900434123
+            }
+          }
+        },
+        {
+          "graph_seed": 7,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            0,
+            2,
+            14,
+            24,
+            26,
+            30,
+            32,
+            58,
+            73,
+            92
+          ],
+          "oracle_risk": 14.875928422066496,
+          "local_search_iterations": 12,
+          "risk_evaluations": 11701,
+          "wall_seconds": 5.9663357000099495,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.868240206757509
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.402846329180134
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.701383666905725
+                }
+              ],
+              "per_graph_risk": 15.657490067614455
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    1,
+                    3,
+                    4,
+                    12,
+                    27,
+                    32,
+                    33,
+                    52,
+                    80
+                  ],
+                  "risk": 16.02063492089401
+                }
+              ],
+              "per_graph_risk": 16.02063492089401
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    14,
+                    22,
+                    23,
+                    24,
+                    26,
+                    30,
+                    70,
+                    77,
+                    92
+                  ],
+                  "risk": 15.352929018708153
+                }
+              ],
+              "per_graph_risk": 15.352929018708153
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    11,
+                    12,
+                    27,
+                    32,
+                    33,
+                    61,
+                    63,
+                    75,
+                    95
+                  ],
+                  "risk": 15.74834681051393
+                }
+              ],
+              "per_graph_risk": 15.74834681051393
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    4,
+                    12,
+                    14,
+                    24,
+                    27,
+                    30,
+                    33,
+                    35,
+                    92
+                  ],
+                  "risk": 14.9873809563007
+                }
+              ],
+              "per_graph_risk": 14.9873809563007
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    14,
+                    17,
+                    34,
+                    41,
+                    55,
+                    56,
+                    58,
+                    70,
+                    77,
+                    79
+                  ],
+                  "risk": 15.507518994923096
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    8,
+                    11,
+                    13,
+                    21,
+                    31,
+                    39,
+                    57,
+                    62,
+                    71,
+                    96
+                  ],
+                  "risk": 15.740200256259833
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    5,
+                    10,
+                    19,
+                    20,
+                    26,
+                    36,
+                    54,
+                    75,
+                    79,
+                    83
+                  ],
+                  "risk": 15.73932932291415
+                }
+              ],
+              "per_graph_risk": 15.662349524699026
+            }
+          }
+        },
+        {
+          "graph_seed": 8,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            5,
+            17,
+            27,
+            41,
+            45,
+            53,
+            68,
+            79,
+            92,
+            97
+          ],
+          "oracle_risk": 15.859056421962338,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.55576439993456,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 17.323227086435377
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 17.263218936586632
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 17.663918607660552
+                }
+              ],
+              "per_graph_risk": 17.41678821022752
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    9,
+                    10,
+                    17,
+                    35,
+                    41,
+                    45,
+                    46,
+                    49,
+                    68,
+                    87
+                  ],
+                  "risk": 17.613569968270813
+                }
+              ],
+              "per_graph_risk": 17.613569968270813
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    5,
+                    27,
+                    53,
+                    67,
+                    74,
+                    79,
+                    84,
+                    92,
+                    97
+                  ],
+                  "risk": 16.79414385769721
+                }
+              ],
+              "per_graph_risk": 16.79414385769721
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    15,
+                    17,
+                    30,
+                    35,
+                    41,
+                    45,
+                    62,
+                    66,
+                    68,
+                    87
+                  ],
+                  "risk": 17.276500058775344
+                }
+              ],
+              "per_graph_risk": 17.276500058775344
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    17,
+                    27,
+                    41,
+                    53,
+                    68,
+                    79,
+                    87,
+                    92,
+                    97
+                  ],
+                  "risk": 15.910424832300324
+                }
+              ],
+              "per_graph_risk": 15.910424832300324
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    2,
+                    4,
+                    18,
+                    34,
+                    42,
+                    48,
+                    54,
+                    65,
+                    79,
+                    99
+                  ],
+                  "risk": 17.304006833817375
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    2,
+                    3,
+                    24,
+                    31,
+                    36,
+                    37,
+                    45,
+                    63,
+                    72,
+                    92
+                  ],
+                  "risk": 17.16340631850279
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    6,
+                    13,
+                    20,
+                    27,
+                    37,
+                    54,
+                    59,
+                    68,
+                    78,
+                    82
+                  ],
+                  "risk": 17.454204501315527
+                }
+              ],
+              "per_graph_risk": 17.30720588454523
+            }
+          }
+        },
+        {
+          "graph_seed": 9,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            4,
+            17,
+            29,
+            36,
+            43,
+            54,
+            79,
+            88,
+            91,
+            95
+          ],
+          "oracle_risk": 13.900625833177134,
+          "local_search_iterations": 8,
+          "risk_evaluations": 8101,
+          "wall_seconds": 4.107023700024001,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 14.786250301167406
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 14.88626453389957
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 14.916995090417823
+                }
+              ],
+              "per_graph_risk": 14.863169975161599
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    9,
+                    18,
+                    36,
+                    44,
+                    52,
+                    59,
+                    63,
+                    64,
+                    96
+                  ],
+                  "risk": 15.223021079004887
+                }
+              ],
+              "per_graph_risk": 15.223021079004887
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    17,
+                    31,
+                    43,
+                    54,
+                    67,
+                    72,
+                    80,
+                    88,
+                    95,
+                    97
+                  ],
+                  "risk": 14.504903235739313
+                }
+              ],
+              "per_graph_risk": 14.504903235739313
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    9,
+                    18,
+                    27,
+                    36,
+                    44,
+                    52,
+                    63,
+                    79,
+                    96
+                  ],
+                  "risk": 15.041842586161257
+                }
+              ],
+              "per_graph_risk": 15.041842586161257
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    9,
+                    17,
+                    43,
+                    44,
+                    54,
+                    63,
+                    88,
+                    95,
+                    96,
+                    97
+                  ],
+                  "risk": 13.810049892536455
+                }
+              ],
+              "per_graph_risk": 13.810049892536455
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    8,
+                    28,
+                    52,
+                    61,
+                    62,
+                    64,
+                    81,
+                    88,
+                    92,
+                    99
+                  ],
+                  "risk": 14.789337163731844
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    1,
+                    8,
+                    15,
+                    21,
+                    38,
+                    41,
+                    42,
+                    46,
+                    68,
+                    88
+                  ],
+                  "risk": 14.77664802313299
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    48,
+                    52,
+                    62,
+                    66,
+                    70,
+                    74,
+                    81,
+                    90,
+                    95
+                  ],
+                  "risk": 14.72038789118186
+                }
+              ],
+              "per_graph_risk": 14.762124359348897
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cell": "G2_S2_D0_k10_N100",
+      "mu": 0.01,
+      "oracle_label": "one-swap local-search risk oracle",
+      "best_deployment_method": "B3c",
+      "method_cross_graph_mean_risk": {
+        "Random": 16.337307723893186,
+        "Degree": 16.71563877916881,
+        "B3a": 15.76314240783132,
+        "B3b": 16.33519712848789,
+        "B3c": 15.188973712065671,
+        "CEM": 16.155562471664307
+      },
+      "oracle_cross_graph_mean_risk": 15.131132898305935,
+      "oracle_gain_unnormalized": 0.05784081375973873,
+      "readings": {
+        "ddof_0": {
+          "delta": 6.422617828996538,
+          "exit": "A"
+        },
+        "ddof_1": {
+          "delta": 6.770033626811629,
+          "exit": "A"
+        }
+      },
+      "DDOF_SPLIT": false,
+      "exit": "A",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            0,
+            6,
+            15,
+            21,
+            25,
+            70,
+            72,
+            76,
+            93,
+            95
+          ],
+          "oracle_risk": 15.30142758459187,
+          "local_search_iterations": 12,
+          "risk_evaluations": 11701,
+          "wall_seconds": 5.984645699965768,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 17.32212597857773
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.451283877159963
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 17.21882484332503
+                }
+              ],
+              "per_graph_risk": 16.99741156635424
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    32,
+                    42,
+                    51,
+                    61,
+                    72,
+                    74,
+                    77,
+                    83,
+                    95
+                  ],
+                  "risk": 17.64910850428507
+                }
+              ],
+              "per_graph_risk": 17.64910850428507
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    3,
+                    8,
+                    15,
+                    21,
+                    47,
+                    60,
+                    70,
+                    75,
+                    76
+                  ],
+                  "risk": 16.22037462748237
+                }
+              ],
+              "per_graph_risk": 16.22037462748237
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    29,
+                    30,
+                    41,
+                    67,
+                    72,
+                    81,
+                    83,
+                    92,
+                    95
+                  ],
+                  "risk": 17.167662944318547
+                }
+              ],
+              "per_graph_risk": 17.167662944318547
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    6,
+                    15,
+                    21,
+                    70,
+                    72,
+                    76,
+                    81,
+                    93,
+                    95
+                  ],
+                  "risk": 15.320201062867309
+                }
+              ],
+              "per_graph_risk": 15.320201062867309
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    19,
+                    51,
+                    56,
+                    70,
+                    74,
+                    81,
+                    85,
+                    92,
+                    95,
+                    99
+                  ],
+                  "risk": 16.636103844125213
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    9,
+                    12,
+                    20,
+                    21,
+                    35,
+                    58,
+                    64,
+                    75,
+                    98
+                  ],
+                  "risk": 17.089793237408568
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    30,
+                    49,
+                    52,
+                    55,
+                    70,
+                    82,
+                    94,
+                    95,
+                    96
+                  ],
+                  "risk": 16.743505594430584
+                }
+              ],
+              "per_graph_risk": 16.823134225321454
+            }
+          }
+        },
+        {
+          "graph_seed": 1,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            6,
+            15,
+            31,
+            34,
+            36,
+            60,
+            63,
+            68,
+            76,
+            82
+          ],
+          "oracle_risk": 17.32271299162454,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.457425800035708,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 19.39615826846939
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 19.028927872149257
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 19.385556302932407
+                }
+              ],
+              "per_graph_risk": 19.27021414785035
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    5,
+                    6,
+                    7,
+                    10,
+                    15,
+                    20,
+                    68,
+                    76,
+                    94
+                  ],
+                  "risk": 19.894207690075227
+                }
+              ],
+              "per_graph_risk": 19.894207690075227
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    31,
+                    34,
+                    36,
+                    60,
+                    63,
+                    67,
+                    70,
+                    82,
+                    99
+                  ],
+                  "risk": 18.181420201869436
+                }
+              ],
+              "per_graph_risk": 18.181420201869436
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    15,
+                    19,
+                    20,
+                    37,
+                    41,
+                    56,
+                    68,
+                    76,
+                    94
+                  ],
+                  "risk": 19.178990229242245
+                }
+              ],
+              "per_graph_risk": 19.178990229242245
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    20,
+                    31,
+                    34,
+                    40,
+                    60,
+                    63,
+                    68,
+                    82,
+                    94
+                  ],
+                  "risk": 17.354961553380257
+                }
+              ],
+              "per_graph_risk": 17.354961553380257
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    4,
+                    13,
+                    22,
+                    34,
+                    43,
+                    63,
+                    70,
+                    82,
+                    88,
+                    94
+                  ],
+                  "risk": 18.124246714011374
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    26,
+                    27,
+                    34,
+                    38,
+                    53,
+                    58,
+                    67,
+                    82,
+                    88,
+                    90
+                  ],
+                  "risk": 18.555924641291224
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    2,
+                    10,
+                    19,
+                    22,
+                    43,
+                    46,
+                    58,
+                    64,
+                    88,
+                    90
+                  ],
+                  "risk": 19.49222904038648
+                }
+              ],
+              "per_graph_risk": 18.724133465229695
+            }
+          }
+        },
+        {
+          "graph_seed": 2,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            2,
+            7,
+            10,
+            25,
+            31,
+            39,
+            56,
+            71,
+            73,
+            77
+          ],
+          "oracle_risk": 14.263697991497963,
+          "local_search_iterations": 8,
+          "risk_evaluations": 8101,
+          "wall_seconds": 4.115216400008649,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.164518825583084
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.163861553195508
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.171860590847803
+                }
+              ],
+              "per_graph_risk": 15.166746989875463
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    4,
+                    7,
+                    21,
+                    36,
+                    63,
+                    66,
+                    67,
+                    71,
+                    90
+                  ],
+                  "risk": 15.44220141745847
+                }
+              ],
+              "per_graph_risk": 15.44220141745847
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    10,
+                    14,
+                    25,
+                    26,
+                    31,
+                    56,
+                    57,
+                    73,
+                    80
+                  ],
+                  "risk": 14.769784909921409
+                }
+              ],
+              "per_graph_risk": 14.769784909921409
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    5,
+                    21,
+                    36,
+                    39,
+                    48,
+                    67,
+                    71,
+                    90,
+                    91
+                  ],
+                  "risk": 15.200769697460613
+                }
+              ],
+              "per_graph_risk": 15.200769697460613
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    10,
+                    21,
+                    25,
+                    31,
+                    48,
+                    56,
+                    71,
+                    73,
+                    90
+                  ],
+                  "risk": 14.302456694143926
+                }
+              ],
+              "per_graph_risk": 14.302456694143926
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    5,
+                    13,
+                    18,
+                    32,
+                    35,
+                    42,
+                    48,
+                    63,
+                    71,
+                    84
+                  ],
+                  "risk": 15.364574884377296
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    11,
+                    13,
+                    14,
+                    20,
+                    26,
+                    28,
+                    71,
+                    72,
+                    75,
+                    81
+                  ],
+                  "risk": 15.188374407095697
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    36,
+                    40,
+                    43,
+                    47,
+                    48,
+                    53,
+                    69,
+                    71,
+                    82,
+                    89
+                  ],
+                  "risk": 15.355779594661104
+                }
+              ],
+              "per_graph_risk": 15.302909628711367
+            }
+          }
+        },
+        {
+          "graph_seed": 3,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            7,
+            11,
+            33,
+            37,
+            48,
+            50,
+            58,
+            81,
+            92,
+            93
+          ],
+          "oracle_risk": 15.140864082110081,
+          "local_search_iterations": 8,
+          "risk_evaluations": 8101,
+          "wall_seconds": 4.13211460004095,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.758386613997066
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.70661221697021
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.819760089943765
+                }
+              ],
+              "per_graph_risk": 15.761586306970345
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    36,
+                    38,
+                    45,
+                    50,
+                    51,
+                    56,
+                    70,
+                    81,
+                    85,
+                    95
+                  ],
+                  "risk": 15.988663985284308
+                }
+              ],
+              "per_graph_risk": 15.988663985284308
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    11,
+                    32,
+                    33,
+                    37,
+                    58,
+                    68,
+                    75,
+                    92,
+                    93
+                  ],
+                  "risk": 15.572721909332701
+                }
+              ],
+              "per_graph_risk": 15.572721909332701
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    14,
+                    38,
+                    45,
+                    50,
+                    56,
+                    77,
+                    81,
+                    85,
+                    95
+                  ],
+                  "risk": 15.780669403721813
+                }
+              ],
+              "per_graph_risk": 15.780669403721813
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    11,
+                    32,
+                    33,
+                    37,
+                    45,
+                    56,
+                    85,
+                    88,
+                    92
+                  ],
+                  "risk": 15.209506461050104
+                }
+              ],
+              "per_graph_risk": 15.209506461050104
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    12,
+                    13,
+                    38,
+                    50,
+                    53,
+                    55,
+                    57,
+                    70,
+                    72,
+                    91
+                  ],
+                  "risk": 15.84250592418065
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    1,
+                    6,
+                    7,
+                    47,
+                    52,
+                    64,
+                    76,
+                    79,
+                    98
+                  ],
+                  "risk": 15.975910994765245
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    12,
+                    15,
+                    17,
+                    42,
+                    63,
+                    85,
+                    88,
+                    89,
+                    90,
+                    99
+                  ],
+                  "risk": 15.715810669397582
+                }
+              ],
+              "per_graph_risk": 15.844742529447826
+            }
+          }
+        },
+        {
+          "graph_seed": 4,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            4,
+            17,
+            39,
+            49,
+            50,
+            54,
+            66,
+            78,
+            90,
+            99
+          ],
+          "oracle_risk": 16.00589234316274,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.580343300011009,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 17.586154289019017
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 17.36239177966425
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 17.012700005529986
+                }
+              ],
+              "per_graph_risk": 17.320415358071084
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    2,
+                    4,
+                    9,
+                    10,
+                    11,
+                    24,
+                    34,
+                    49,
+                    66
+                  ],
+                  "risk": 18.005176303568756
+                }
+              ],
+              "per_graph_risk": 18.005176303568756
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    17,
+                    19,
+                    39,
+                    50,
+                    54,
+                    71,
+                    78,
+                    90,
+                    92,
+                    99
+                  ],
+                  "risk": 16.774044413975098
+                }
+              ],
+              "per_graph_risk": 16.774044413975098
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    4,
+                    9,
+                    38,
+                    49,
+                    63,
+                    64,
+                    66,
+                    82,
+                    93
+                  ],
+                  "risk": 17.34076570379256
+                }
+              ],
+              "per_graph_risk": 17.34076570379256
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    17,
+                    39,
+                    49,
+                    50,
+                    54,
+                    66,
+                    78,
+                    93,
+                    99
+                  ],
+                  "risk": 16.04374395818282
+                }
+              ],
+              "per_graph_risk": 16.04374395818282
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    12,
+                    18,
+                    36,
+                    39,
+                    57,
+                    78,
+                    86,
+                    92,
+                    96,
+                    99
+                  ],
+                  "risk": 16.858926651102806
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    5,
+                    23,
+                    25,
+                    40,
+                    62,
+                    78,
+                    84,
+                    88,
+                    91,
+                    97
+                  ],
+                  "risk": 17.201378221003765
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    8,
+                    24,
+                    32,
+                    36,
+                    39,
+                    44,
+                    66,
+                    76,
+                    80,
+                    91
+                  ],
+                  "risk": 17.349996907574923
+                }
+              ],
+              "per_graph_risk": 17.13676725989383
+            }
+          }
+        },
+        {
+          "graph_seed": 5,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            10,
+            15,
+            20,
+            26,
+            45,
+            58,
+            61,
+            66,
+            81,
+            86
+          ],
+          "oracle_risk": 13.908087482988854,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.606270199990831,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 14.720287176177456
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 14.659293523955213
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 14.667715873121175
+                }
+              ],
+              "per_graph_risk": 14.682432191084615
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    4,
+                    26,
+                    30,
+                    34,
+                    40,
+                    58,
+                    68,
+                    71,
+                    80
+                  ],
+                  "risk": 14.71078847845876
+                }
+              ],
+              "per_graph_risk": 14.71078847845876
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    8,
+                    15,
+                    20,
+                    45,
+                    61,
+                    63,
+                    66,
+                    81,
+                    94
+                  ],
+                  "risk": 14.396181353813164
+                }
+              ],
+              "per_graph_risk": 14.396181353813164
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    4,
+                    14,
+                    26,
+                    34,
+                    58,
+                    62,
+                    68,
+                    80,
+                    93
+                  ],
+                  "risk": 14.592921054924474
+                }
+              ],
+              "per_graph_risk": 14.592921054924474
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    15,
+                    20,
+                    26,
+                    34,
+                    61,
+                    66,
+                    68,
+                    76,
+                    80
+                  ],
+                  "risk": 14.001537174248245
+                }
+              ],
+              "per_graph_risk": 14.001537174248245
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    6,
+                    20,
+                    36,
+                    42,
+                    55,
+                    68,
+                    70,
+                    78,
+                    79,
+                    89
+                  ],
+                  "risk": 14.645429051969202
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    14,
+                    38,
+                    39,
+                    45,
+                    49,
+                    53,
+                    64,
+                    78,
+                    84,
+                    88
+                  ],
+                  "risk": 14.72859698794386
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    26,
+                    38,
+                    45,
+                    48,
+                    55,
+                    57,
+                    61,
+                    63,
+                    66,
+                    86
+                  ],
+                  "risk": 14.364762992687258
+                }
+              ],
+              "per_graph_risk": 14.579596344200107
+            }
+          }
+        },
+        {
+          "graph_seed": 6,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            13,
+            18,
+            29,
+            31,
+            37,
+            41,
+            63,
+            77,
+            96,
+            97
+          ],
+          "oracle_risk": 16.243133472518846,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.5642484000418335,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 18.262248383099696
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 17.812584998842624
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 18.292238494280955
+                }
+              ],
+              "per_graph_risk": 18.122357292074426
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    17,
+                    29,
+                    34,
+                    43,
+                    45,
+                    55,
+                    63,
+                    74,
+                    85,
+                    96
+                  ],
+                  "risk": 18.57184741474474
+                }
+              ],
+              "per_graph_risk": 18.57184741474474
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    31,
+                    37,
+                    41,
+                    47,
+                    58,
+                    77,
+                    82,
+                    86,
+                    97
+                  ],
+                  "risk": 17.115057943584038
+                }
+              ],
+              "per_graph_risk": 17.115057943584038
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    17,
+                    29,
+                    30,
+                    45,
+                    63,
+                    68,
+                    79,
+                    96,
+                    99
+                  ],
+                  "risk": 17.988056483224394
+                }
+              ],
+              "per_graph_risk": 17.988056483224394
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    18,
+                    29,
+                    31,
+                    37,
+                    41,
+                    63,
+                    75,
+                    79,
+                    97
+                  ],
+                  "risk": 16.298391486530075
+                }
+              ],
+              "per_graph_risk": 16.298391486530075
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    18,
+                    31,
+                    42,
+                    47,
+                    56,
+                    70,
+                    78,
+                    89,
+                    91,
+                    97
+                  ],
+                  "risk": 17.097033011410904
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    6,
+                    19,
+                    25,
+                    41,
+                    45,
+                    47,
+                    51,
+                    63,
+                    91
+                  ],
+                  "risk": 17.74585265216699
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    1,
+                    4,
+                    12,
+                    37,
+                    40,
+                    45,
+                    60,
+                    61,
+                    82,
+                    90
+                  ],
+                  "risk": 18.0887847307834
+                }
+              ],
+              "per_graph_risk": 17.643890131453762
+            }
+          }
+        },
+        {
+          "graph_seed": 7,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            0,
+            3,
+            24,
+            36,
+            41,
+            62,
+            65,
+            69,
+            77,
+            83
+          ],
+          "oracle_risk": 13.768079664462316,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.599427999928594,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 14.513261691699629
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 14.464421991522169
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 14.572543116647664
+                }
+              ],
+              "per_graph_risk": 14.516742266623154
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    6,
+                    25,
+                    34,
+                    39,
+                    59,
+                    62,
+                    75,
+                    77,
+                    90
+                  ],
+                  "risk": 14.594834503717767
+                }
+              ],
+              "per_graph_risk": 14.594834503717767
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    4,
+                    24,
+                    30,
+                    36,
+                    43,
+                    65,
+                    69,
+                    82,
+                    95
+                  ],
+                  "risk": 14.126848986139303
+                }
+              ],
+              "per_graph_risk": 14.126848986139303
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    3,
+                    8,
+                    34,
+                    39,
+                    59,
+                    61,
+                    64,
+                    77,
+                    99
+                  ],
+                  "risk": 14.433679618345971
+                }
+              ],
+              "per_graph_risk": 14.433679618345971
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    3,
+                    24,
+                    33,
+                    34,
+                    59,
+                    65,
+                    69,
+                    77,
+                    99
+                  ],
+                  "risk": 13.877776782555385
+                }
+              ],
+              "per_graph_risk": 13.877776782555385
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    0,
+                    4,
+                    13,
+                    35,
+                    38,
+                    39,
+                    42,
+                    57,
+                    93,
+                    99
+                  ],
+                  "risk": 14.659783096275865
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    5,
+                    10,
+                    16,
+                    36,
+                    54,
+                    67,
+                    68,
+                    72,
+                    81,
+                    86
+                  ],
+                  "risk": 14.480824994594204
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    10,
+                    13,
+                    16,
+                    23,
+                    47,
+                    51,
+                    60,
+                    77,
+                    92,
+                    97
+                  ],
+                  "risk": 14.59638503676039
+                }
+              ],
+              "per_graph_risk": 14.578997709210151
+            }
+          }
+        },
+        {
+          "graph_seed": 8,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            8,
+            9,
+            15,
+            31,
+            34,
+            43,
+            68,
+            73,
+            92,
+            96
+          ],
+          "oracle_risk": 15.043114348958131,
+          "local_search_iterations": 12,
+          "risk_evaluations": 11701,
+          "wall_seconds": 5.977860999992117,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.558776502997617
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.270461457695628
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.875279782872962
+                }
+              ],
+              "per_graph_risk": 16.234839247855405
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    5,
+                    7,
+                    15,
+                    47,
+                    64,
+                    68,
+                    91,
+                    96,
+                    98
+                  ],
+                  "risk": 16.826054597016064
+                }
+              ],
+              "per_graph_risk": 16.826054597016064
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    9,
+                    13,
+                    31,
+                    34,
+                    42,
+                    49,
+                    50,
+                    92,
+                    95
+                  ],
+                  "risk": 15.653958173829835
+                }
+              ],
+              "per_graph_risk": 15.653958173829835
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    22,
+                    26,
+                    46,
+                    47,
+                    64,
+                    73,
+                    86,
+                    96,
+                    98
+                  ],
+                  "risk": 16.354157673720284
+                }
+              ],
+              "per_graph_risk": 16.354157673720284
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    8,
+                    9,
+                    26,
+                    31,
+                    47,
+                    50,
+                    64,
+                    92,
+                    96
+                  ],
+                  "risk": 15.137375013707102
+                }
+              ],
+              "per_graph_risk": 15.137375013707102
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    4,
+                    9,
+                    27,
+                    28,
+                    39,
+                    54,
+                    55,
+                    74,
+                    82,
+                    84
+                  ],
+                  "risk": 15.610661575394188
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    4,
+                    5,
+                    9,
+                    13,
+                    17,
+                    41,
+                    62,
+                    69,
+                    75,
+                    90
+                  ],
+                  "risk": 15.830520044137701
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    3,
+                    9,
+                    10,
+                    21,
+                    42,
+                    45,
+                    48,
+                    64,
+                    67,
+                    77
+                  ],
+                  "risk": 15.767715810125038
+                }
+              ],
+              "per_graph_risk": 15.736299143218977
+            }
+          }
+        },
+        {
+          "graph_seed": 9,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            7,
+            11,
+            33,
+            44,
+            45,
+            63,
+            77,
+            82,
+            91,
+            93
+          ],
+          "oracle_risk": 14.314319021144009,
+          "local_search_iterations": 10,
+          "risk_evaluations": 9901,
+          "wall_seconds": 5.074439299991354,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 15.30288972501266
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.414319592113507
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 15.183786299392203
+                }
+              ],
+              "per_graph_risk": 15.30033187217279
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    2,
+                    9,
+                    11,
+                    18,
+                    27,
+                    45,
+                    61,
+                    65,
+                    69,
+                    70
+                  ],
+                  "risk": 15.47350489707896
+                }
+              ],
+              "per_graph_risk": 15.47350489707896
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    20,
+                    33,
+                    41,
+                    44,
+                    59,
+                    77,
+                    82,
+                    91,
+                    93
+                  ],
+                  "risk": 14.82103155836584
+                }
+              ],
+              "per_graph_risk": 14.82103155836584
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    9,
+                    11,
+                    27,
+                    31,
+                    43,
+                    61,
+                    65,
+                    71,
+                    83,
+                    99
+                  ],
+                  "risk": 15.31429847612799
+                }
+              ],
+              "per_graph_risk": 15.31429847612799
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    11,
+                    20,
+                    27,
+                    33,
+                    44,
+                    65,
+                    75,
+                    77,
+                    82,
+                    91
+                  ],
+                  "risk": 14.343786933991517
+                }
+              ],
+              "per_graph_risk": 14.343786933991517
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    6,
+                    10,
+                    16,
+                    19,
+                    57,
+                    71,
+                    77,
+                    83,
+                    87,
+                    88
+                  ],
+                  "risk": 15.332525866031924
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    2,
+                    3,
+                    22,
+                    60,
+                    67,
+                    75,
+                    76,
+                    79,
+                    82,
+                    96
+                  ],
+                  "risk": 15.09858872311604
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    3,
+                    13,
+                    43,
+                    47,
+                    51,
+                    72,
+                    73,
+                    81,
+                    82,
+                    96
+                  ],
+                  "risk": 15.1243482507197
+                }
+              ],
+              "per_graph_risk": 15.185154279955889
+            }
+          }
+        }
+      ]
+    },
+    {
+      "cell": "G3_S2_D0_k10_N100",
+      "mu": 0.01,
+      "oracle_label": "one-swap local-search risk oracle",
+      "best_deployment_method": "B3a",
+      "method_cross_graph_mean_risk": {
+        "Random": 16.46566126074868,
+        "Degree": 17.6392472277997,
+        "B3a": 15.478319821941914,
+        "B3b": 16.00172707132661,
+        "B3c": 15.633408379030229,
+        "CEM": 16.442428620826593
+      },
+      "oracle_cross_graph_mean_risk": 15.381790855518721,
+      "oracle_gain_unnormalized": 0.09652896642319231,
+      "readings": {
+        "ddof_0": {
+          "delta": 0.5611553286366919,
+          "exit": "A"
+        },
+        "ddof_1": {
+          "delta": 0.591509653210752,
+          "exit": "A"
+        }
+      },
+      "DDOF_SPLIT": false,
+      "exit": "A",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            5,
+            15,
+            28,
+            38,
+            47,
+            56,
+            65,
+            75,
+            81,
+            95
+          ],
+          "oracle_risk": 15.235437455894868,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.6926580999279395,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.185987794741138
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.966686430007293
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.28583722309353
+                }
+              ],
+              "per_graph_risk": 16.146170482613986
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    4,
+                    10,
+                    15,
+                    16,
+                    18,
+                    20,
+                    35,
+                    86,
+                    92
+                  ],
+                  "risk": 17.598689466617888
+                }
+              ],
+              "per_graph_risk": 17.598689466617888
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    13,
+                    25,
+                    36,
+                    46,
+                    53,
+                    65,
+                    75,
+                    85,
+                    95
+                  ],
+                  "risk": 15.33015846882444
+                }
+              ],
+              "per_graph_risk": 15.33015846882444
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    16,
+                    27,
+                    35,
+                    42,
+                    54,
+                    63,
+                    73,
+                    78,
+                    86
+                  ],
+                  "risk": 15.693344154633918
+                }
+              ],
+              "per_graph_risk": 15.693344154633918
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    15,
+                    26,
+                    35,
+                    43,
+                    54,
+                    67,
+                    78,
+                    86,
+                    99
+                  ],
+                  "risk": 15.47183408814947
+                }
+              ],
+              "per_graph_risk": 15.47183408814947
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    7,
+                    14,
+                    17,
+                    35,
+                    52,
+                    54,
+                    58,
+                    70,
+                    81,
+                    86
+                  ],
+                  "risk": 16.22551799570648
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    15,
+                    25,
+                    40,
+                    47,
+                    48,
+                    53,
+                    83,
+                    92,
+                    96
+                  ],
+                  "risk": 16.084416087494514
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    16,
+                    23,
+                    24,
+                    38,
+                    59,
+                    64,
+                    92,
+                    94,
+                    97,
+                    98
+                  ],
+                  "risk": 16.67684649061343
+                }
+              ],
+              "per_graph_risk": 16.32892685793814
+            }
+          }
+        },
+        {
+          "graph_seed": 1,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            0,
+            10,
+            18,
+            28,
+            43,
+            51,
+            60,
+            72,
+            80,
+            92
+          ],
+          "oracle_risk": 15.412383551724705,
+          "local_search_iterations": 13,
+          "risk_evaluations": 12601,
+          "wall_seconds": 6.371471900027245,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.373118627593687
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.234037109037352
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.622469575836433
+                }
+              ],
+              "per_graph_risk": 16.409875104155827
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    2,
+                    3,
+                    4,
+                    21,
+                    25,
+                    29,
+                    31,
+                    70,
+                    86
+                  ],
+                  "risk": 17.93151561667467
+                }
+              ],
+              "per_graph_risk": 17.93151561667467
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    11,
+                    22,
+                    32,
+                    43,
+                    53,
+                    62,
+                    72,
+                    81,
+                    91
+                  ],
+                  "risk": 15.445297521002292
+                }
+              ],
+              "per_graph_risk": 15.445297521002292
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    15,
+                    21,
+                    37,
+                    47,
+                    57,
+                    70,
+                    78,
+                    86,
+                    96
+                  ],
+                  "risk": 15.977643404134257
+                }
+              ],
+              "per_graph_risk": 15.977643404134257
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    12,
+                    21,
+                    35,
+                    49,
+                    57,
+                    62,
+                    72,
+                    86,
+                    92
+                  ],
+                  "risk": 15.625628913547786
+                }
+              ],
+              "per_graph_risk": 15.625628913547786
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    4,
+                    12,
+                    33,
+                    40,
+                    54,
+                    57,
+                    81,
+                    82,
+                    91
+                  ],
+                  "risk": 16.310364162032535
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    7,
+                    18,
+                    30,
+                    47,
+                    70,
+                    75,
+                    77,
+                    79,
+                    92,
+                    96
+                  ],
+                  "risk": 16.60262756190057
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    10,
+                    12,
+                    17,
+                    26,
+                    38,
+                    45,
+                    65,
+                    69,
+                    89,
+                    98
+                  ],
+                  "risk": 16.117220204106474
+                }
+              ],
+              "per_graph_risk": 16.343403976013192
+            }
+          }
+        },
+        {
+          "graph_seed": 2,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            8,
+            18,
+            28,
+            38,
+            47,
+            57,
+            65,
+            76,
+            88,
+            95
+          ],
+          "oracle_risk": 15.315422973568223,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.726076900027692,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.29128753418197
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.141077347642454
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.54944739282748
+                }
+              ],
+              "per_graph_risk": 16.327270758217303
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    4,
+                    5,
+                    10,
+                    13,
+                    15,
+                    31,
+                    71,
+                    75,
+                    81
+                  ],
+                  "risk": 17.191609557797705
+                }
+              ],
+              "per_graph_risk": 17.191609557797705
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    18,
+                    28,
+                    38,
+                    47,
+                    55,
+                    65,
+                    76,
+                    83,
+                    95
+                  ],
+                  "risk": 15.38574134524894
+                }
+              ],
+              "per_graph_risk": 15.38574134524894
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    23,
+                    31,
+                    37,
+                    44,
+                    59,
+                    66,
+                    75,
+                    87,
+                    99
+                  ],
+                  "risk": 16.010711337812904
+                }
+              ],
+              "per_graph_risk": 16.010711337812904
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    15,
+                    22,
+                    30,
+                    37,
+                    46,
+                    58,
+                    65,
+                    75,
+                    93
+                  ],
+                  "risk": 15.62003682845511
+                }
+              ],
+              "per_graph_risk": 15.62003682845511
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    7,
+                    8,
+                    19,
+                    32,
+                    43,
+                    45,
+                    56,
+                    65,
+                    84
+                  ],
+                  "risk": 16.151426235929986
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    2,
+                    5,
+                    9,
+                    20,
+                    53,
+                    65,
+                    79,
+                    80,
+                    91,
+                    96
+                  ],
+                  "risk": 16.65748080826988
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    5,
+                    13,
+                    18,
+                    30,
+                    36,
+                    51,
+                    54,
+                    65,
+                    72,
+                    87
+                  ],
+                  "risk": 16.025340251646448
+                }
+              ],
+              "per_graph_risk": 16.27808243194877
+            }
+          }
+        },
+        {
+          "graph_seed": 3,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            1,
+            10,
+            17,
+            26,
+            39,
+            50,
+            59,
+            70,
+            79,
+            88
+          ],
+          "oracle_risk": 15.390319763808655,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.745421500061639,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.474946087725865
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.08766575728514
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.7455201056402
+                }
+              ],
+              "per_graph_risk": 16.4360439835504
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    8,
+                    11,
+                    14,
+                    15,
+                    17,
+                    18,
+                    27,
+                    41,
+                    72
+                  ],
+                  "risk": 17.974768441616007
+                }
+              ],
+              "per_graph_risk": 17.974768441616007
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    13,
+                    24,
+                    38,
+                    48,
+                    59,
+                    70,
+                    77,
+                    84,
+                    94
+                  ],
+                  "risk": 15.494196454694565
+                }
+              ],
+              "per_graph_risk": 15.494196454694565
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    17,
+                    27,
+                    41,
+                    47,
+                    57,
+                    64,
+                    72,
+                    81,
+                    92
+                  ],
+                  "risk": 15.92147517016669
+                }
+              ],
+              "per_graph_risk": 15.92147517016669
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    16,
+                    26,
+                    36,
+                    41,
+                    54,
+                    71,
+                    81,
+                    86,
+                    95
+                  ],
+                  "risk": 15.628362667402252
+                }
+              ],
+              "per_graph_risk": 15.628362667402252
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    36,
+                    39,
+                    40,
+                    42,
+                    50,
+                    64,
+                    68,
+                    70,
+                    84,
+                    89
+                  ],
+                  "risk": 17.42197479814536
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    0,
+                    3,
+                    12,
+                    31,
+                    52,
+                    65,
+                    69,
+                    82,
+                    96,
+                    97
+                  ],
+                  "risk": 16.36810627028228
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    5,
+                    9,
+                    16,
+                    26,
+                    50,
+                    73,
+                    79,
+                    82,
+                    89,
+                    91
+                  ],
+                  "risk": 16.459187371875743
+                }
+              ],
+              "per_graph_risk": 16.749756146767794
+            }
+          }
+        },
+        {
+          "graph_seed": 4,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            10,
+            17,
+            28,
+            39,
+            49,
+            57,
+            72,
+            81,
+            89,
+            98
+          ],
+          "oracle_risk": 15.368014245301893,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.776201100088656,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.568083609446113
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.21349605368652
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.955446955721797
+                }
+              ],
+              "per_graph_risk": 16.579008872951476
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    4,
+                    7,
+                    14,
+                    18,
+                    19,
+                    21,
+                    30,
+                    45,
+                    80
+                  ],
+                  "risk": 17.48385529297189
+                }
+              ],
+              "per_graph_risk": 17.48385529297189
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    9,
+                    17,
+                    28,
+                    38,
+                    48,
+                    57,
+                    68,
+                    78,
+                    89,
+                    98
+                  ],
+                  "risk": 15.425787888369811
+                }
+              ],
+              "per_graph_risk": 15.425787888369811
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    18,
+                    30,
+                    37,
+                    45,
+                    58,
+                    66,
+                    79,
+                    80,
+                    93
+                  ],
+                  "risk": 16.17700376159547
+                }
+              ],
+              "per_graph_risk": 16.17700376159547
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    13,
+                    30,
+                    39,
+                    45,
+                    49,
+                    57,
+                    68,
+                    80,
+                    89,
+                    94
+                  ],
+                  "risk": 15.64089586571114
+                }
+              ],
+              "per_graph_risk": 15.64089586571114
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    15,
+                    33,
+                    50,
+                    57,
+                    71,
+                    78,
+                    85,
+                    86,
+                    87,
+                    98
+                  ],
+                  "risk": 16.217049617767916
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    8,
+                    30,
+                    32,
+                    43,
+                    48,
+                    53,
+                    61,
+                    64,
+                    73,
+                    86
+                  ],
+                  "risk": 16.349522096044602
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    25,
+                    26,
+                    45,
+                    46,
+                    57,
+                    60,
+                    65,
+                    81,
+                    84,
+                    95
+                  ],
+                  "risk": 16.560929847793762
+                }
+              ],
+              "per_graph_risk": 16.37583385386876
+            }
+          }
+        },
+        {
+          "graph_seed": 5,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            8,
+            17,
+            26,
+            37,
+            45,
+            56,
+            66,
+            75,
+            88,
+            97
+          ],
+          "oracle_risk": 15.458865275648552,
+          "local_search_iterations": 12,
+          "risk_evaluations": 11701,
+          "wall_seconds": 6.221929399995133,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.70857775365199
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.286721211330562
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.64365360213198
+                }
+              ],
+              "per_graph_risk": 16.54631752237151
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    11,
+                    13,
+                    15,
+                    20,
+                    26,
+                    32,
+                    34,
+                    39,
+                    51,
+                    85
+                  ],
+                  "risk": 17.284787898734866
+                }
+              ],
+              "per_graph_risk": 17.284787898734866
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    16,
+                    25,
+                    35,
+                    45,
+                    54,
+                    64,
+                    74,
+                    86,
+                    96
+                  ],
+                  "risk": 15.54329738078197
+                }
+              ],
+              "per_graph_risk": 15.54329738078197
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    15,
+                    20,
+                    34,
+                    44,
+                    51,
+                    59,
+                    76,
+                    85,
+                    93
+                  ],
+                  "risk": 16.042968108960903
+                }
+              ],
+              "per_graph_risk": 16.042968108960903
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    8,
+                    15,
+                    29,
+                    39,
+                    55,
+                    65,
+                    75,
+                    85,
+                    90,
+                    97
+                  ],
+                  "risk": 15.645211397752417
+                }
+              ],
+              "per_graph_risk": 15.645211397752417
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    8,
+                    19,
+                    27,
+                    38,
+                    47,
+                    56,
+                    60,
+                    69,
+                    72,
+                    99
+                  ],
+                  "risk": 16.11701264846867
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    13,
+                    19,
+                    25,
+                    28,
+                    39,
+                    48,
+                    67,
+                    85,
+                    88,
+                    91
+                  ],
+                  "risk": 16.538445318817878
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    7,
+                    12,
+                    19,
+                    21,
+                    44,
+                    55,
+                    65,
+                    69,
+                    76,
+                    92
+                  ],
+                  "risk": 16.317192972541825
+                }
+              ],
+              "per_graph_risk": 16.324216979942793
+            }
+          }
+        },
+        {
+          "graph_seed": 6,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            8,
+            18,
+            29,
+            38,
+            45,
+            54,
+            63,
+            74,
+            88,
+            97
+          ],
+          "oracle_risk": 15.34862108871518,
+          "local_search_iterations": 12,
+          "risk_evaluations": 11701,
+          "wall_seconds": 6.168850199901499,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.409384970679735
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.172209367157034
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.93710499693879
+                }
+              ],
+              "per_graph_risk": 16.506233111591854
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    3,
+                    9,
+                    13,
+                    16,
+                    20,
+                    39,
+                    52,
+                    57,
+                    67
+                  ],
+                  "risk": 16.921763570864275
+                }
+              ],
+              "per_graph_risk": 16.921763570864275
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    17,
+                    27,
+                    36,
+                    42,
+                    51,
+                    59,
+                    73,
+                    87,
+                    99
+                  ],
+                  "risk": 15.532527297114335
+                }
+              ],
+              "per_graph_risk": 15.532527297114335
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    12,
+                    26,
+                    35,
+                    43,
+                    52,
+                    57,
+                    67,
+                    79,
+                    93
+                  ],
+                  "risk": 15.868073882919646
+                }
+              ],
+              "per_graph_risk": 15.868073882919646
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    13,
+                    25,
+                    38,
+                    49,
+                    58,
+                    67,
+                    74,
+                    85,
+                    93
+                  ],
+                  "risk": 15.611318662000523
+                }
+              ],
+              "per_graph_risk": 15.611318662000523
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    22,
+                    27,
+                    35,
+                    39,
+                    42,
+                    47,
+                    55,
+                    76,
+                    98
+                  ],
+                  "risk": 16.490112907777775
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    10,
+                    15,
+                    28,
+                    31,
+                    38,
+                    41,
+                    62,
+                    75,
+                    83,
+                    95
+                  ],
+                  "risk": 16.051197281656883
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    2,
+                    14,
+                    19,
+                    20,
+                    28,
+                    36,
+                    45,
+                    61,
+                    83,
+                    93
+                  ],
+                  "risk": 15.931712985160512
+                }
+              ],
+              "per_graph_risk": 16.157674391531724
+            }
+          }
+        },
+        {
+          "graph_seed": 7,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            10,
+            20,
+            29,
+            38,
+            46,
+            57,
+            66,
+            75,
+            85,
+            96
+          ],
+          "oracle_risk": 15.422999750165049,
+          "local_search_iterations": 11,
+          "risk_evaluations": 10801,
+          "wall_seconds": 5.703448800020851,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.31226328330597
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.33162902546965
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.77269617697725
+                }
+              ],
+              "per_graph_risk": 16.472196161917623
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    11,
+                    13,
+                    15,
+                    16,
+                    25,
+                    30,
+                    53,
+                    70,
+                    85
+                  ],
+                  "risk": 16.936640450361104
+                }
+              ],
+              "per_graph_risk": 16.936640450361104
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    17,
+                    26,
+                    34,
+                    42,
+                    52,
+                    63,
+                    73,
+                    84,
+                    95
+                  ],
+                  "risk": 15.548712618587984
+                }
+              ],
+              "per_graph_risk": 15.548712618587984
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    7,
+                    15,
+                    26,
+                    36,
+                    46,
+                    53,
+                    62,
+                    70,
+                    78,
+                    91
+                  ],
+                  "risk": 16.025799746117737
+                }
+              ],
+              "per_graph_risk": 16.025799746117737
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    6,
+                    15,
+                    21,
+                    26,
+                    41,
+                    53,
+                    61,
+                    70,
+                    85,
+                    96
+                  ],
+                  "risk": 15.580880007830391
+                }
+              ],
+              "per_graph_risk": 15.580880007830391
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    7,
+                    19,
+                    23,
+                    25,
+                    34,
+                    39,
+                    58,
+                    59,
+                    64,
+                    75
+                  ],
+                  "risk": 16.776870263916685
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    17,
+                    20,
+                    44,
+                    45,
+                    61,
+                    67,
+                    81,
+                    92,
+                    95
+                  ],
+                  "risk": 16.231025791439762
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    2,
+                    4,
+                    20,
+                    27,
+                    31,
+                    37,
+                    42,
+                    44,
+                    61,
+                    62
+                  ],
+                  "risk": 16.927589134496912
+                }
+              ],
+              "per_graph_risk": 16.64516172995112
+            }
+          }
+        },
+        {
+          "graph_seed": 8,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            9,
+            19,
+            30,
+            39,
+            49,
+            58,
+            69,
+            77,
+            89,
+            98
+          ],
+          "oracle_risk": 15.582132685472235,
+          "local_search_iterations": 9,
+          "risk_evaluations": 9001,
+          "wall_seconds": 4.747129600029439,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 17.18923390654934
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 16.70635116380531
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 17.315000870040457
+                }
+              ],
+              "per_graph_risk": 17.070195313465035
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    0,
+                    4,
+                    8,
+                    10,
+                    12,
+                    17,
+                    18,
+                    21,
+                    28,
+                    97
+                  ],
+                  "risk": 19.781195289586712
+                }
+              ],
+              "per_graph_risk": 19.781195289586712
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    16,
+                    26,
+                    38,
+                    49,
+                    58,
+                    69,
+                    77,
+                    87,
+                    98
+                  ],
+                  "risk": 15.671789815419066
+                }
+              ],
+              "per_graph_risk": 15.671789815419066
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    17,
+                    29,
+                    44,
+                    47,
+                    59,
+                    62,
+                    70,
+                    79,
+                    94
+                  ],
+                  "risk": 16.518608398749187
+                }
+              ],
+              "per_graph_risk": 16.518608398749187
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    4,
+                    9,
+                    18,
+                    30,
+                    41,
+                    50,
+                    57,
+                    71,
+                    84,
+                    93
+                  ],
+                  "risk": 15.921521502305081
+                }
+              ],
+              "per_graph_risk": 15.921521502305081
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    3,
+                    7,
+                    40,
+                    41,
+                    57,
+                    72,
+                    75,
+                    77,
+                    85,
+                    94
+                  ],
+                  "risk": 16.765971613945684
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    7,
+                    13,
+                    15,
+                    28,
+                    38,
+                    52,
+                    54,
+                    61,
+                    64,
+                    75
+                  ],
+                  "risk": 16.880787811643522
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    16,
+                    17,
+                    25,
+                    36,
+                    42,
+                    65,
+                    68,
+                    70,
+                    82,
+                    97
+                  ],
+                  "risk": 16.76011518861452
+                }
+              ],
+              "per_graph_risk": 16.80229153806791
+            }
+          }
+        },
+        {
+          "graph_seed": 9,
+          "random_start_seed": 0,
+          "random_start_samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "oracle_samples": [
+            7,
+            18,
+            26,
+            37,
+            47,
+            60,
+            66,
+            75,
+            89,
+            98
+          ],
+          "oracle_risk": 15.28371176488785,
+          "local_search_iterations": 8,
+          "risk_evaluations": 8101,
+          "wall_seconds": 4.28161689999979,
+          "methods": {
+            "Random": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    1,
+                    3,
+                    7,
+                    17,
+                    25,
+                    29,
+                    47,
+                    58,
+                    77,
+                    81
+                  ],
+                  "risk": 16.0784558835593
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    3,
+                    13,
+                    24,
+                    31,
+                    43,
+                    47,
+                    70,
+                    79,
+                    89,
+                    92
+                  ],
+                  "risk": 15.968031619081673
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    24,
+                    28,
+                    33,
+                    39,
+                    43,
+                    60,
+                    76,
+                    78
+                  ],
+                  "risk": 16.44341638731435
+                }
+              ],
+              "per_graph_risk": 16.163301296651774
+            },
+            "Degree": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    10,
+                    13,
+                    14,
+                    22,
+                    23,
+                    24,
+                    34,
+                    48,
+                    51,
+                    64
+                  ],
+                  "risk": 17.28764669277189
+                }
+              ],
+              "per_graph_risk": 17.28764669277189
+            },
+            "B3a": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    5,
+                    17,
+                    26,
+                    37,
+                    47,
+                    59,
+                    66,
+                    73,
+                    80,
+                    95
+                  ],
+                  "risk": 15.40568942937573
+                }
+              ],
+              "per_graph_risk": 15.40568942937573
+            },
+            "B3b": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    1,
+                    10,
+                    21,
+                    31,
+                    36,
+                    51,
+                    64,
+                    74,
+                    82,
+                    96
+                  ],
+                  "risk": 15.781642748175392
+                }
+              ],
+              "per_graph_risk": 15.781642748175392
+            },
+            "B3c": {
+              "runs": [
+                {
+                  "method_seed": null,
+                  "samples": [
+                    3,
+                    10,
+                    23,
+                    32,
+                    40,
+                    51,
+                    64,
+                    77,
+                    89,
+                    97
+                  ],
+                  "risk": 15.588393857148146
+                }
+              ],
+              "per_graph_risk": 15.588393857148146
+            },
+            "CEM": {
+              "runs": [
+                {
+                  "method_seed": 0,
+                  "samples": [
+                    7,
+                    17,
+                    35,
+                    36,
+                    54,
+                    59,
+                    62,
+                    72,
+                    85,
+                    96
+                  ],
+                  "risk": 15.927208807925583
+                },
+                {
+                  "method_seed": 1,
+                  "samples": [
+                    4,
+                    21,
+                    26,
+                    27,
+                    35,
+                    44,
+                    71,
+                    94,
+                    96,
+                    98
+                  ],
+                  "risk": 16.5485502553595
+                },
+                {
+                  "method_seed": 2,
+                  "samples": [
+                    9,
+                    10,
+                    11,
+                    47,
+                    67,
+                    69,
+                    73,
+                    78,
+                    82,
+                    94
+                  ],
+                  "risk": 16.781055843422106
+                }
+              ],
+              "per_graph_risk": 16.41893830223573
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "competition_exclusion": "diagnostic only; excluded from K2/K3/K4/K4-b and the 15 method pairs",
+  "git_commit_at_generation": "6ff30100dee20822eee826dd605b3778e11dd485",
+  "thread_config": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

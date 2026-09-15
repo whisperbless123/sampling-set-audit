@@ -1,0 +1,1097 @@
+{
+  "artifact": "D1-A2 K1-2 coverage diagnosis",
+  "diagnostic_only": true,
+  "git_commit": "d22dd10e700e0460a714fed7968ca3f8f77b9e89",
+  "hostname": "DESKTOP-O16RHSN",
+  "nmse_evaluated": false,
+  "rows": [
+    {
+      "graph_seed": 0,
+      "placeholder": {
+        "community_sample_counts": [
+          6,
+          0,
+          1,
+          3
+        ],
+        "condition_number": 88.77246564886829,
+        "missed_communities": 1,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.65,
+        "samples": [
+          0,
+          1,
+          3,
+          8,
+          15,
+          21,
+          70,
+          75,
+          76,
+          93
+        ],
+        "sigma_min": 0.011013121391064914
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 215.4912393217026,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.27,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.0035975266279516228
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 164.2667443797355,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.35,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.005949121091272839
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 194.06816150500538,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.32,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.004614897177041303
+        }
+      ]
+    },
+    {
+      "graph_seed": 1,
+      "placeholder": {
+        "community_sample_counts": [
+          0,
+          3,
+          6,
+          1
+        ],
+        "condition_number": 510.18388083992033,
+        "missed_communities": 1,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.69,
+        "samples": [
+          31,
+          34,
+          36,
+          59,
+          60,
+          63,
+          67,
+          69,
+          70,
+          82
+        ],
+        "sigma_min": 0.0019261793536738323
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 126.01471577250565,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.21,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.0036282585052169894
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 281.14922855864967,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.32,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.003177527532147653
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 191.02431947391463,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.004037170176478783
+        }
+      ]
+    },
+    {
+      "graph_seed": 2,
+      "placeholder": {
+        "community_sample_counts": [
+          3,
+          2,
+          4,
+          1
+        ],
+        "condition_number": 60.62602318554143,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.52,
+        "samples": [
+          2,
+          10,
+          14,
+          25,
+          31,
+          52,
+          56,
+          57,
+          73,
+          78
+        ],
+        "sigma_min": 0.015820493693841205
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 337.16276915630266,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.0028208346634348374
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 942.3719238944226,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.0009740366373714256
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 108.1792084719912,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.008279070413974318
+        }
+      ]
+    },
+    {
+      "graph_seed": 3,
+      "placeholder": {
+        "community_sample_counts": [
+          1,
+          3,
+          2,
+          4
+        ],
+        "condition_number": 42.20426829731946,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.52,
+        "samples": [
+          11,
+          33,
+          35,
+          37,
+          58,
+          68,
+          75,
+          90,
+          92,
+          93
+        ],
+        "sigma_min": 0.02322008020224635
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 64.14611821473386,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.25,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.009835975329062836
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 67.30451409418744,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.21,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.010923234417994272
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 196.52392103024962,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.00487544050518168
+        }
+      ]
+    },
+    {
+      "graph_seed": 4,
+      "placeholder": {
+        "community_sample_counts": [
+          1,
+          1,
+          3,
+          5
+        ],
+        "condition_number": 68.53783144152484,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.6,
+        "samples": [
+          17,
+          39,
+          50,
+          54,
+          71,
+          78,
+          88,
+          90,
+          92,
+          99
+        ],
+        "sigma_min": 0.014349226326113629
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 216.70936073714634,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.37,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.004132022330539694
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 137.77535648174646,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.3,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.002959055283409541
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 625.7373364440692,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.26,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.0015162481595454558
+        }
+      ]
+    },
+    {
+      "graph_seed": 5,
+      "placeholder": {
+        "community_sample_counts": [
+          3,
+          1,
+          3,
+          3
+        ],
+        "condition_number": 216.0695609613716,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.49,
+        "samples": [
+          8,
+          15,
+          20,
+          45,
+          57,
+          61,
+          66,
+          76,
+          81,
+          94
+        ],
+        "sigma_min": 0.004427214664772225
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 92.04039634569529,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.3,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.005321030642118985
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 29.71005874569494,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.21,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.012843672076237413
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 180.50363524552137,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.24,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.002353019332167032
+        }
+      ]
+    },
+    {
+      "graph_seed": 6,
+      "placeholder": {
+        "community_sample_counts": [
+          1,
+          3,
+          0,
+          6
+        ],
+        "condition_number": 571.922633203977,
+        "missed_communities": 1,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.76,
+        "samples": [
+          0,
+          31,
+          37,
+          41,
+          75,
+          77,
+          82,
+          86,
+          91,
+          97
+        ],
+        "sigma_min": 0.001733302279875647
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 556.7721317687527,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.35,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.0010849746854960612
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 62.294004988172084,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.28,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.015437077363215328
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 117.70547301467498,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.29,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.00373044942013785
+        }
+      ]
+    },
+    {
+      "graph_seed": 7,
+      "placeholder": {
+        "community_sample_counts": [
+          4,
+          3,
+          2,
+          1
+        ],
+        "condition_number": 46.544740198216516,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.43,
+        "samples": [
+          2,
+          4,
+          17,
+          24,
+          33,
+          36,
+          43,
+          65,
+          69,
+          95
+        ],
+        "sigma_min": 0.020999871251747022
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 2180.64577456962,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.19,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.00021950405234906207
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 399.05687100248286,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.28,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.0021420567407400095
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 76.44136761864988,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.32,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.011340064927606919
+        }
+      ]
+    },
+    {
+      "graph_seed": 8,
+      "placeholder": {
+        "community_sample_counts": [
+          2,
+          3,
+          3,
+          2
+        ],
+        "condition_number": 398.47761675128436,
+        "missed_communities": 0,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.56,
+        "samples": [
+          8,
+          9,
+          31,
+          34,
+          49,
+          50,
+          52,
+          58,
+          92,
+          95
+        ],
+        "sigma_min": 0.002476651728746985
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 99.02458140499915,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.26,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.0053867315057888315
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 82.48522695002966,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.24,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.011488402695996401
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 130.5511081941055,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 3.0,
+          "nearest_sample_distance_mean": 1.36,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.007555074272866576
+        }
+      ]
+    },
+    {
+      "graph_seed": 9,
+      "placeholder": {
+        "community_sample_counts": [
+          2,
+          3,
+          0,
+          5
+        ],
+        "condition_number": 48.17893672854062,
+        "missed_communities": 1,
+        "nearest_sample_distance_max": 3.0,
+        "nearest_sample_distance_mean": 1.5,
+        "samples": [
+          17,
+          20,
+          30,
+          33,
+          44,
+          77,
+          82,
+          91,
+          93,
+          97
+        ],
+        "sigma_min": 0.020018779090654328
+      },
+      "random": [
+        {
+          "community_sample_counts": [
+            4,
+            3,
+            1,
+            2
+          ],
+          "condition_number": 156.7047655264623,
+          "method_seed": 0,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.31,
+          "samples": [
+            1,
+            3,
+            7,
+            17,
+            25,
+            29,
+            47,
+            58,
+            77,
+            81
+          ],
+          "sigma_min": 0.006059533221766502
+        },
+        {
+          "community_sample_counts": [
+            3,
+            3,
+            1,
+            3
+          ],
+          "condition_number": 69.29042234236033,
+          "method_seed": 1,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.22,
+          "samples": [
+            3,
+            13,
+            24,
+            31,
+            43,
+            47,
+            70,
+            79,
+            89,
+            92
+          ],
+          "sigma_min": 0.006198581870075542
+        },
+        {
+          "community_sample_counts": [
+            3,
+            4,
+            1,
+            2
+          ],
+          "condition_number": 155.03254667186843,
+          "method_seed": 2,
+          "missed_communities": 0,
+          "nearest_sample_distance_max": 2.0,
+          "nearest_sample_distance_mean": 1.21,
+          "samples": [
+            9,
+            10,
+            24,
+            28,
+            33,
+            39,
+            43,
+            60,
+            76,
+            78
+          ],
+          "sigma_min": 0.005951707394711884
+        }
+      ]
+    }
+  ],
+  "search_performed": false,
+  "selection_changed": false,
+  "source": "runs/k1_2_diagnosis.json",
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

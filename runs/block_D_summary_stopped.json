@@ -1,0 +1,47 @@
+{
+  "block": "D",
+  "status": "STOPPED_BEFORE_OUTPUT",
+  "execution_commit": "34ec466b464d5c81623956a1e5e8bd9cc20cb6f5",
+  "n": 300,
+  "planned_cells": [
+    "G1_S1",
+    "G2_S2",
+    "G3_S3"
+  ],
+  "mu_values": {
+    "G1_S1": 0.01,
+    "G2_S2": 0.01,
+    "G3_S3": 0.1
+  },
+  "mu_recalibrated": false,
+  "partial_result_files_written": false,
+  "failure": {
+    "kind": "SINGULAR_MAIN_RECONSTRUCTION_SYSTEM",
+    "graph_family": "G1",
+    "graph_seed": 8,
+    "connected_components": 2,
+    "component_sizes": [
+      299,
+      1
+    ],
+    "isolated_nodes": [
+      122
+    ],
+    "methods_omitting_isolated_component": [
+      "Random(seed=0)",
+      "Random(seed=1)",
+      "Random(seed=2)",
+      "Degree",
+      "B3b"
+    ],
+    "methods_covering_isolated_component": [
+      "B3a",
+      "B3c"
+    ],
+    "exception": "numpy.linalg.LinAlgError: Singular matrix"
+  },
+  "SCALE_MU_MISMATCH": null,
+  "scale_guard_evaluated": false,
+  "authority_required": "A new decision is required to choose graph resampling/connectivity enforcement, component-covering sampling, minimum-norm pseudoinverse reconstruction, or another explicit disposition.",
+  "block_F_started": false
+}

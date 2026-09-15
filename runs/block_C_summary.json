@@ -1,0 +1,110 @@
+{
+  "block": "C",
+  "cem_budget_gate_passed": true,
+  "completed": [
+    {
+      "baseline_file": "runs\\C_G1_S1_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G1_S1_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G1_S1_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "75ebe0fd129458850c33219b7a66fb4c4ac18819d5d3bf4c4532a3dee9538dcb"
+    },
+    {
+      "baseline_file": "runs\\C_G2_S1_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G2_S1_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G2_S1_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "18e3f018a58507ced8bdfc75329b59339d9b6fdd1f2804b5e927d44096ecf78e"
+    },
+    {
+      "baseline_file": "runs\\C_G3_S1_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G3_S1_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G3_S1_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "1616461abf08f2f97be19a04e6571d1a99b9dfc4e9b8f98f1481c1b5acc500d0"
+    },
+    {
+      "baseline_file": "runs\\C_G1_S2_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G1_S2_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G1_S2_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "d335daefdc60619b305d71a3c0fbcd3f7c8aa77d425834a5bace34e8653e608c"
+    },
+    {
+      "baseline_file": "runs\\C_G2_S2_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G2_S2_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G2_S2_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "fcde6faac8570d230f6972cd6a9b5df21d66f711a44e25af26a315123017bb2e"
+    },
+    {
+      "baseline_file": "runs\\C_G3_S2_to_S3_DS_k10.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "C_G3_S2_to_S3_DS_k10",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_C_G3_S2_to_S3_DS_k10.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "baede284a2bd13e358d946ba348f729f060cb30f432c71d1829718ebea9a8a6a"
+    }
+  ],
+  "completed_new_cells": 6,
+  "compliance_checks": [
+    {
+      "a05_no_rerun_quote": "\u9644\u4e00\u6761\u7981\u4ee4\uff1a\u4e0d\u5f97\u4e3a\"\u9a8c\u8bc1\"\u800c\u8865\u8dd1 \u03bc=0.01 \u5bf9\u7167\u2014\u2014\u8dd1\u4e24\u7248\u518d\u6311\u5373 \u03bc-shopping\uff0c\u6bd4\u4efb\u4f55\u5355\u7248\u90fd\u7cdf\uff1b\u89c4\u5219\u5b9a\u4e8e\u539f\u7406\u3001\u6267\u884c\u6070\u4e00\u6b21\u3002",
+      "a05_platform_rule_quote": "\u5e73\u53f0\u70b9\u7684\u7cbe\u786e\u5b9a\u4e49\uff1a\u7b49\u6548\u533a = \u7f51\u683c\u4e0a NMSE \u2264 1.01 \u00d7 \u7f51\u683c\u6700\u5c0f\u503c\u7684\u70b9\u96c6\u4e2d\u5305\u542b argmin \u7684\u8fde\u7eed\u6bb5\uff1b\u5e73\u53f0\u70b9 = \u8be5\u6bb5\u5185\u6700\u5927 \u03bc\u3002\u9002\u7528\u4e8e\u5168\u90e8\u4e5d\u7ec4\u5408\u3002",
+      "kind": "start",
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "time": "2026-09-04T10:33:35.135330+08:00"
+    },
+    {
+      "d0_reuse_unchanged": true,
+      "dqn_implemented": false,
+      "kind": "final",
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "time": "2026-09-04T10:35:35.608741+08:00"
+    }
+  ],
+  "d0_k10_reuse_fingerprints": {},
+  "diagnostic_gate_passed": true,
+  "expected_new_cells": 6,
+  "flags": [],
+  "git_commit": "16a97fc794bd953d4d8e80ddbcbe749ba8a01042",
+  "hostname": "DESKTOP-O16RHSN",
+  "reused_d0_k10_cells": 0,
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "wall_seconds": 120.47497690003365
+}

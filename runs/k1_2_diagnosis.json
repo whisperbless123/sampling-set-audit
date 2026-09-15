@@ -1,0 +1,149 @@
+{
+  "artifact": "K1-2 stop-period read-only matrix diagnosis",
+  "diagnostic_only": true,
+  "not_protocol_result_metric": true,
+  "selection_changed": false,
+  "search_performed": false,
+  "selection_replay": "placeholder=row-norm top-k; random=existing seeded selector",
+  "source_k1_results": "runs/k1_results.json",
+  "git_commit": "cca689ff545b177c18a6a91bbc2b26e27e203503",
+  "hostname": "DESKTOP-O16RHSN",
+  "thread_config": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "configuration": {
+    "graph_family": "G2",
+    "signal_family": "S1",
+    "drift": "D0",
+    "n": 100,
+    "k": 10,
+    "r": 10,
+    "graph_seeds": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+    "random_method_seeds": [0, 1, 2]
+  },
+  "rows": [
+    {
+      "graph_seed": 0,
+      "placeholder": {
+        "condition_number": 88.77246564886829,
+        "sigma_min": 0.011013121391064914
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 215.4912393217026, "sigma_min": 0.0035975266279516228},
+        {"method_seed": 1, "condition_number": 164.2667443797355, "sigma_min": 0.005949121091272839},
+        {"method_seed": 2, "condition_number": 194.06816150500538, "sigma_min": 0.004614897177041303}
+      ]
+    },
+    {
+      "graph_seed": 1,
+      "placeholder": {
+        "condition_number": 510.18388083992033,
+        "sigma_min": 0.0019261793536738323
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 126.01471577250565, "sigma_min": 0.0036282585052169894},
+        {"method_seed": 1, "condition_number": 281.14922855864967, "sigma_min": 0.003177527532147653},
+        {"method_seed": 2, "condition_number": 191.02431947391463, "sigma_min": 0.004037170176478783}
+      ]
+    },
+    {
+      "graph_seed": 2,
+      "placeholder": {
+        "condition_number": 60.62602318554143,
+        "sigma_min": 0.015820493693841205
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 337.16276915630266, "sigma_min": 0.0028208346634348374},
+        {"method_seed": 1, "condition_number": 942.3719238944226, "sigma_min": 0.0009740366373714256},
+        {"method_seed": 2, "condition_number": 108.1792084719912, "sigma_min": 0.008279070413974318}
+      ]
+    },
+    {
+      "graph_seed": 3,
+      "placeholder": {
+        "condition_number": 42.20426829731946,
+        "sigma_min": 0.02322008020224635
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 64.14611821473386, "sigma_min": 0.009835975329062836},
+        {"method_seed": 1, "condition_number": 67.30451409418744, "sigma_min": 0.010923234417994272},
+        {"method_seed": 2, "condition_number": 196.52392103024962, "sigma_min": 0.00487544050518168}
+      ]
+    },
+    {
+      "graph_seed": 4,
+      "placeholder": {
+        "condition_number": 68.53783144152484,
+        "sigma_min": 0.014349226326113629
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 216.70936073714634, "sigma_min": 0.004132022330539694},
+        {"method_seed": 1, "condition_number": 137.77535648174646, "sigma_min": 0.002959055283409541},
+        {"method_seed": 2, "condition_number": 625.7373364440692, "sigma_min": 0.0015162481595454558}
+      ]
+    },
+    {
+      "graph_seed": 5,
+      "placeholder": {
+        "condition_number": 216.0695609613716,
+        "sigma_min": 0.004427214664772225
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 92.04039634569529, "sigma_min": 0.005321030642118985},
+        {"method_seed": 1, "condition_number": 29.71005874569494, "sigma_min": 0.012843672076237413},
+        {"method_seed": 2, "condition_number": 180.50363524552137, "sigma_min": 0.002353019332167032}
+      ]
+    },
+    {
+      "graph_seed": 6,
+      "placeholder": {
+        "condition_number": 571.922633203977,
+        "sigma_min": 0.001733302279875647
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 556.7721317687527, "sigma_min": 0.0010849746854960612},
+        {"method_seed": 1, "condition_number": 62.294004988172084, "sigma_min": 0.015437077363215328},
+        {"method_seed": 2, "condition_number": 117.70547301467498, "sigma_min": 0.00373044942013785}
+      ]
+    },
+    {
+      "graph_seed": 7,
+      "placeholder": {
+        "condition_number": 46.544740198216516,
+        "sigma_min": 0.020999871251747022
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 2180.64577456962, "sigma_min": 0.00021950405234906207},
+        {"method_seed": 1, "condition_number": 399.05687100248286, "sigma_min": 0.0021420567407400095},
+        {"method_seed": 2, "condition_number": 76.44136761864988, "sigma_min": 0.011340064927606919}
+      ]
+    },
+    {
+      "graph_seed": 8,
+      "placeholder": {
+        "condition_number": 398.47761675128436,
+        "sigma_min": 0.002476651728746985
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 99.02458140499915, "sigma_min": 0.0053867315057888315},
+        {"method_seed": 1, "condition_number": 82.48522695002966, "sigma_min": 0.011488402695996401},
+        {"method_seed": 2, "condition_number": 130.5511081941055, "sigma_min": 0.007555074272866576}
+      ]
+    },
+    {
+      "graph_seed": 9,
+      "placeholder": {
+        "condition_number": 48.17893672854062,
+        "sigma_min": 0.020018779090654328
+      },
+      "random": [
+        {"method_seed": 0, "condition_number": 156.7047655264623, "sigma_min": 0.006059533221766502},
+        {"method_seed": 1, "condition_number": 69.29042234236033, "sigma_min": 0.006198581870075542},
+        {"method_seed": 2, "condition_number": 155.03254667186843, "sigma_min": 0.005951707394711884}
+      ]
+    }
+  ]
+}
+

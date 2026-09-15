@@ -1,0 +1,1656 @@
+{
+  "usage": "display only; not evidence for any statement or decision",
+  "aggregation": "arithmetic mean of archived cross_graph_mean by (rho_percent, signal_family, method)",
+  "inputs": {
+    "runs/fig3_dose_table.json": {
+      "commit": "24713b48d5dd026bf3102d1f1b7f3e65ae2b790d",
+      "sha256": "bd8d277d6a7507cfbf391b7706b871f39fe977dc075291e7a839840ce9bdd76f",
+      "bytes": 95216
+    },
+    "runs/oracle_reference.json": {
+      "commit": "24713b48d5dd026bf3102d1f1b7f3e65ae2b790d",
+      "sha256": "1d6253fd82ebf6c1fe604dd916c762d5233af7dc94a77e8deff3dff4f1f94e60",
+      "bytes": 1303825
+    }
+  },
+  "rows": [
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "B3a",
+      "mean_across_graph_families": 0.4249353614178492,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.47289291442261866,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[2].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4368047772751519,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[56].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3651083925557771,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[110].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.4236537729970242,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4745369585492698,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[0].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.42504101573774256,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[9].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3713833447040603,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[18].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "B3b",
+      "mean_across_graph_families": 0.686622172595588,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8239740066863129,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[3].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.7596498299928275,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[57].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4762426811076235,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[111].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "B3c",
+      "mean_across_graph_families": 0.44127240588809363,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.45375407306131893,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[4].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4436887401507631,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[58].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4263744044521987,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[112].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "CEM",
+      "mean_across_graph_families": 0.42180357357403214,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.44195259949467325,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[5].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.42657248404223386,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[59].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3968856371851894,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[113].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "Degree",
+      "mean_across_graph_families": 0.7861714424691524,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8559012745882575,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[1].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.8129256852189295,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[55].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.68968736760027,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[109].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S1",
+      "method": "Random",
+      "mean_across_graph_families": 0.692745177217046,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.7808736352110185,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[0].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.7351847344027729,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[54].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5621771620373468,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[108].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "B3a",
+      "mean_across_graph_families": 0.35267276870307646,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.35551147945695816,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[20].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.35696892652709444,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[74].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3455379001251768,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[128].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.35005359640796857,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.35566772486727966,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[3].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3561636923051112,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[12].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.33832937205151487,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[21].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "B3b",
+      "mean_across_graph_families": 0.3625770289831431,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.36858236870187994,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[21].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.37024751121664545,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[75].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.34890120703090377,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[129].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "B3c",
+      "mean_across_graph_families": 0.34425990031318293,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.34492006101137607,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[22].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.34434864053876135,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[76].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3435109993894113,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[130].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "CEM",
+      "mean_across_graph_families": 0.3625905831038326,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3663470688241849,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[23].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3673607981324079,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[77].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3540638823549049,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[131].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "Degree",
+      "mean_across_graph_families": 0.3749745151127509,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3737561734512719,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[19].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.37653077713445615,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[73].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3746365947525246,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[127].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S2",
+      "method": "Random",
+      "mean_across_graph_families": 0.36454838363537284,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.36949984074606684,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[18].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3677389601706199,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[72].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.35640634998943166,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[126].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "B3a",
+      "mean_across_graph_families": 0.4958352949825211,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4923963107968211,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[38].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4965787290321173,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[92].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.498530845118625,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[146].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.4935570020334871,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.49234010478168644,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[6].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4946591077136747,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[15].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4936717936051001,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[24].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "B3b",
+      "mean_across_graph_families": 0.5076527471908004,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5079158358734522,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[39].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5085543029181862,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[93].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5064881027807628,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[147].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "B3c",
+      "mean_across_graph_families": 0.5027223135374946,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5093176643001385,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[40].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.49542032380821127,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[94].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5034289525041341,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[148].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "CEM",
+      "mean_across_graph_families": 0.5039883641083635,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5036456693721056,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[41].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5047058783971924,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[95].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5036135445557922,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[149].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "Degree",
+      "mean_across_graph_families": 0.5129760769132293,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5129323972663287,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[37].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5103155989117274,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[91].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5156802345616321,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[145].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 5,
+      "signal_family": "S3",
+      "method": "Random",
+      "mean_across_graph_families": 0.5039299944920922,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5054611320686788,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[36].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5027217754208605,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[90].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5036070759867375,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[144].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "B3a",
+      "mean_across_graph_families": 0.46272192950124674,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.49878026678895393,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[8].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4921035272774767,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[62].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3972819944373096,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[116].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.42892625672641116,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4400390978529719,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[1].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.42435891086259636,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[10].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.42238076146366527,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[19].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "B3b",
+      "mean_across_graph_families": 0.7076701972106858,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8396813955731313,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[9].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.7757141012326472,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[63].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5076150948262789,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[117].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "B3c",
+      "mean_across_graph_families": 0.46814473513340515,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4652587175190546,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[10].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4677081061234398,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[64].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.47146738175772096,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[118].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "CEM",
+      "mean_across_graph_families": 0.4668068545773399,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.47749933737252165,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[11].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.48500748565090746,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[65].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.43791374070859074,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[119].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "Degree",
+      "mean_across_graph_families": 0.8022915402788283,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8700290565468091,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[7].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.8287950848756237,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[61].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.7080504794140523,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[115].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S1",
+      "method": "Random",
+      "mean_across_graph_families": 0.7090009666345916,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.7934900009758709,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[6].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.7485272554128992,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[60].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5849856435150044,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[114].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "B3a",
+      "mean_across_graph_families": 0.3580822385536882,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3589180835717197,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[26].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.36036297680273643,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[80].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3549656552866084,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[134].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.35244699545232305,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3590824211821941,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[4].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.35752621529210915,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[13].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3407323498826659,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[22].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "B3b",
+      "mean_across_graph_families": 0.36672877673258025,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3708592629284857,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[27].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.37077409640040593,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[81].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3585529708688492,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[135].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "B3c",
+      "mean_across_graph_families": 0.3498613432440348,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3456661767759541,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[28].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3479157137077989,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[82].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.35600213924835133,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[136].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "CEM",
+      "mean_across_graph_families": 0.36503292734935483,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.36599428207708773,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[29].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3676417192112081,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[83].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3614627807597687,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[137].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "Degree",
+      "mean_across_graph_families": 0.37615308993668917,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.37566461434346843,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[25].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.37907346428926897,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[79].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.37372119117733005,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[133].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S2",
+      "method": "Random",
+      "mean_across_graph_families": 0.3673350710560848,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.37034302780306805,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[24].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.36946127569944087,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[78].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.36220090966574553,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[132].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "B3a",
+      "mean_across_graph_families": 0.49279839185102786,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.49291977789936564,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[44].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4910774201202349,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[98].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.49439797753348297,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[152].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.48956232083641643,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4920231129255702,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[7].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.49164956859062103,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[16].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.48501428099305804,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[25].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "B3b",
+      "mean_across_graph_families": 0.5040581756194252,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5053721406383693,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[45].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5065058702684835,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[99].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5002965159514228,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[153].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "B3c",
+      "mean_across_graph_families": 0.502204517324389,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5087999519967221,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[46].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.49672085781973074,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[100].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.501092742156714,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[154].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "CEM",
+      "mean_across_graph_families": 0.5033747474336048,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5049046833244945,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[47].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5057910597743562,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[101].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.49942849920196375,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[155].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "Degree",
+      "mean_across_graph_families": 0.5086883516404496,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5097509554473385,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[43].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5096233518896778,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[97].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5066907475843323,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[151].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 15,
+      "signal_family": "S3",
+      "method": "Random",
+      "mean_across_graph_families": 0.5037959491346388,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.505798975922628,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[42].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5036574173339171,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[96].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5019314541473712,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[150].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "B3a",
+      "mean_across_graph_families": 0.5169195916715694,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5616376924938468,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[14].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5354379943038732,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[68].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4536830882169884,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[122].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.45125355716663956,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4355454766126258,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[2].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4270188885240028,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[11].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4911963063632899,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[20].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "B3b",
+      "mean_across_graph_families": 0.7412709008168917,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8544086944937723,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[15].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.811865330864803,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[69].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5575386770920996,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[123].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "B3c",
+      "mean_across_graph_families": 0.4963259732394844,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.488392470495285,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[16].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4800796049046472,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[70].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5205058443185211,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[124].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "CEM",
+      "mean_across_graph_families": 0.5117373663525209,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5244190845267308,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[17].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5101521167247027,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[71].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.500640897806129,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[125].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "Degree",
+      "mean_across_graph_families": 0.8168017047015178,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.8765174065666311,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[13].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.8491673644736997,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[67].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.7247203430642223,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[121].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S1",
+      "method": "Random",
+      "mean_across_graph_families": 0.7330789070155971,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.7978494822133226,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[12].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.7752496334696442,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[66].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.6261376053638243,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[120].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "B3a",
+      "mean_across_graph_families": 0.3627027200288346,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.36058452860589696,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[32].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.36168349806090727,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[86].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3658401334196994,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[140].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.3526619555943042,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3561578655438675,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[5].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.35548692529099324,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[14].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.34634107594805164,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[23].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "B3b",
+      "mean_across_graph_families": 0.3711313924210957,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3752517673775876,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[33].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3737204156345176,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[87].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.364421994251182,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[141].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "B3c",
+      "mean_across_graph_families": 0.3532312879795721,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3476407368122324,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[34].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.34841200669035777,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[88].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3636411204361262,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[142].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "CEM",
+      "mean_across_graph_families": 0.36893853683708216,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.36800392819299127,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[35].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.37139903927078294,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[89].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.36741264304747245,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[143].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "Degree",
+      "mean_across_graph_families": 0.3769200163268351,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.3782249883272064,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[31].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3793393658671585,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[85].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.37319569478614023,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[139].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S2",
+      "method": "Random",
+      "mean_across_graph_families": 0.36995284038761816,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.37009372784709893,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[30].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.3710959010971632,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[84].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.3686688922185922,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[138].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "B3a",
+      "mean_across_graph_families": 0.49510602066862636,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.49377968808634043,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[50].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.49331536036033913,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[104].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.49822301355919957,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[158].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "B3a-evaluation-graph",
+      "mean_across_graph_families": 0.48771546678597405,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.4903832619075845,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[8].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.4908185794159177,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[17].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.48194455903442,
+          "source": "runs/oracle_reference.json",
+          "field": "$.cells[26].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "B3b",
+      "mean_across_graph_families": 0.5047669626736491,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5072998515594296,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[51].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5069288107397681,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[105].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.5000722257217495,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[159].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "B3c",
+      "mean_across_graph_families": 0.5006396267323617,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5090097091929136,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[52].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.49578955901185984,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[106].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4971196119923119,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[160].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "CEM",
+      "mean_across_graph_families": 0.5018083123808599,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5050024371032101,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[53].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.50196482418912,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[107].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4984576758502495,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[161].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "Degree",
+      "mean_across_graph_families": 0.5072125697552861,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5126505168137957,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[49].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5089963778394541,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[103].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4999908146126085,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[157].cross_graph_mean"
+        }
+      ]
+    },
+    {
+      "rho_percent": 30,
+      "signal_family": "S3",
+      "method": "Random",
+      "mean_across_graph_families": 0.502809072754111,
+      "members": [
+        {
+          "graph_family": "G1",
+          "value": 0.5057068557367065,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[48].cross_graph_mean"
+        },
+        {
+          "graph_family": "G2",
+          "value": 0.5034911106408959,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[102].cross_graph_mean"
+        },
+        {
+          "graph_family": "G3",
+          "value": 0.4992292518847307,
+          "source": "runs/fig3_dose_table.json",
+          "field": "$.rows[156].cross_graph_mean"
+        }
+      ]
+    }
+  ]
+}

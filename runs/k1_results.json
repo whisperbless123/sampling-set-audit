@@ -1,0 +1,157 @@
+{
+  "git_commit": "f23d5374777ac71ccce341e7a639c4fa67af6639",
+  "hostname": "DESKTOP-O16RHSN",
+  "k1_1": {
+    "bandlimited_nmse": 3.480517836611634e-29,
+    "condition_number": 215.4912393217026,
+    "lapreg_nmse_record_only": 0.7788656490173282,
+    "n_signals": 200,
+    "passed": true,
+    "redraw_count": 0,
+    "samples": [
+      1,
+      3,
+      7,
+      17,
+      25,
+      29,
+      47,
+      58,
+      77,
+      81
+    ]
+  },
+  "k1_2": {
+    "label": "\u5360\u4f4d\u5b9e\u73b0\u4e0b\u7684\u5224\u5b9a\uff0c\u975e\u534f\u8bae B3a",
+    "passed": false,
+    "passed_graphs": 8,
+    "rows": [
+      {
+        "difference_placeholder_minus_random": 0.030361538601218152,
+        "graph_seed": 0,
+        "passed": false,
+        "placeholder_nmse": 0.7402994640917392,
+        "random_mean_nmse": 0.709937925490521,
+        "random_method_seed_nmse": [
+          0.769575630469978,
+          0.6759250118715192,
+          0.6843131341300654
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.11944456082172994,
+        "graph_seed": 1,
+        "passed": true,
+        "placeholder_nmse": 0.6320843986176411,
+        "random_mean_nmse": 0.751528959439371,
+        "random_method_seed_nmse": [
+          0.7937721453157629,
+          0.6938074062372362,
+          0.7670073267651141
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.10671689431505749,
+        "graph_seed": 2,
+        "passed": true,
+        "placeholder_nmse": 0.5966973419442863,
+        "random_mean_nmse": 0.7034142362593437,
+        "random_method_seed_nmse": [
+          0.6778677331530951,
+          0.7242227968162845,
+          0.7081521788086513
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.05552421347734671,
+        "graph_seed": 3,
+        "passed": true,
+        "placeholder_nmse": 0.6732737003279405,
+        "random_mean_nmse": 0.7287979138052872,
+        "random_method_seed_nmse": [
+          0.7325122022719881,
+          0.7205749127250107,
+          0.7333066264188628
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.05857781748101554,
+        "graph_seed": 4,
+        "passed": true,
+        "placeholder_nmse": 0.6464426798122023,
+        "random_mean_nmse": 0.7050204972932178,
+        "random_method_seed_nmse": [
+          0.7043770002779344,
+          0.7564907926888267,
+          0.6541936989128925
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.1492799783804536,
+        "graph_seed": 5,
+        "passed": true,
+        "placeholder_nmse": 0.6341954892076938,
+        "random_mean_nmse": 0.7834754675881473,
+        "random_method_seed_nmse": [
+          0.7914202029212221,
+          0.7664532121168426,
+          0.7925529877263771
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.006166470105533284,
+        "graph_seed": 6,
+        "passed": true,
+        "placeholder_nmse": 0.7176446387267373,
+        "random_mean_nmse": 0.7238111088322706,
+        "random_method_seed_nmse": [
+          0.755952183082583,
+          0.6442224564284189,
+          0.7712586869858097
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.019196473332493857,
+        "graph_seed": 7,
+        "passed": true,
+        "placeholder_nmse": 0.6723747150597407,
+        "random_mean_nmse": 0.6915711883922345,
+        "random_method_seed_nmse": [
+          0.7102309533204618,
+          0.6762943440473665,
+          0.6881882678088752
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": 0.25039269638569106,
+        "graph_seed": 8,
+        "passed": false,
+        "placeholder_nmse": 0.9458429925901979,
+        "random_mean_nmse": 0.6954502962045068,
+        "random_method_seed_nmse": [
+          0.7381902055117586,
+          0.6425121896865812,
+          0.7056484934151807
+        ]
+      },
+      {
+        "difference_placeholder_minus_random": -0.07957651093002538,
+        "graph_seed": 9,
+        "passed": true,
+        "placeholder_nmse": 0.6508306527651562,
+        "random_mean_nmse": 0.7304071636951815,
+        "random_method_seed_nmse": [
+          0.6979158545825108,
+          0.7975183866927763,
+          0.6957872498102574
+        ]
+      }
+    ]
+  },
+  "k1_3_b": "NOT_DUE_D1; gates D3/D4 admission",
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "inputs": {
+    "supp/effect_sizes_z.md": {
+      "commit": "c9d14229cccc83cce16127ca3aca915b9877395c",
+      "sha256": "e3415b35903829cf115df994bbb5788e24ef9e63ca1eae6965ca551e686ad80c",
+      "bytes": 24499
+    },
+    "runs/k4b_verdict_table.json": {
+      "commit": "9d397329d2c31254c545d7460f9d79f57d931eb4",
+      "sha256": "4ae5ec6e396c08e08f4810c625edefc6391d354040a936428160d7f433d84c71",
+      "bytes": 601660
+    }
+  },
+  "script_sha256": "17d2c6c51f57c700789b3737bf7321c0e91fcd9d73c2187f6c88bb082fab5965",
+  "display": {
+    "contour_levels": [],
+    "cell_border_threshold": "z > 3",
+    "panel_frames": "solid qualified; double qualified and DDOF_SPLIT",
+    "z_annotation_decimals": 2,
+    "colormap": "cividis_r",
+    "method_colors": {
+      "Random": "000000",
+      "Degree": "E69F00",
+      "B3a": "0072B2",
+      "B3b": "009E73",
+      "B3c": "D55E00",
+      "CEM": "CC79A7",
+      "B3a-evaluation-graph": "56B4E9"
+    },
+    "no_rejudgment": true
+  }
+}

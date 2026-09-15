@@ -1,0 +1,981 @@
+{
+  "authorization": "A-27 item 2",
+  "input": "runs/oracle_risk_diagnostic.json",
+  "eta_definition": "(random_mean_risk - oracle_risk) / random_mean_risk",
+  "D1_definition": "mean R(S) of the three realized Random method seeds",
+  "D2_definition": "Monte Carlo expectation of R(S) over uniform k-subsets",
+  "D2_uniform_k_subset_draws_per_cell_graph": 2000,
+  "bootstrap_replicates_per_cell_reading": 10000,
+  "cells": [
+    {
+      "cell": "G1_S2_D0_k10_N100",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "oracle_risk": 14.116537907941032,
+          "D1": {
+            "random_run_risks": [
+              15.169106770170842,
+              15.224271225412064,
+              15.153755507758971
+            ],
+            "random_mean_risk": 15.182377834447292,
+            "absolute_gap": 1.0658399265062606,
+            "eta": 0.07020243720242403
+          },
+          "D2": {
+            "mc_seed": 28200,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.076284829835796,
+            "standard_error": 0.00324943275898948,
+            "mc_mean_95_interval": [
+              15.069915941628176,
+              15.082653718043415
+            ],
+            "absolute_gap": 0.9597469218947641,
+            "eta": 0.06365937846938496
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 1,
+          "oracle_risk": 14.363011279726912,
+          "D1": {
+            "random_run_risks": [
+              16.27956879328276,
+              16.077473573233785,
+              15.83903373406934
+            ],
+            "random_mean_risk": 16.065358700195294,
+            "absolute_gap": 1.7023474204683815,
+            "eta": 0.10596386001936499
+          },
+          "D2": {
+            "mc_seed": 28201,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.048702801339996,
+            "standard_error": 0.006904376431876404,
+            "mc_mean_95_interval": [
+              16.03517022353352,
+              16.062235379146472
+            ],
+            "absolute_gap": 1.6856915216130837,
+            "eta": 0.10503599839061982
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 2,
+          "oracle_risk": 14.755685434560693,
+          "D1": {
+            "random_run_risks": [
+              15.45352314180464,
+              15.79925740968827,
+              15.83577718413876
+            ],
+            "random_mean_risk": 15.696185911877222,
+            "absolute_gap": 0.9405004773165295,
+            "eta": 0.05991904546727225
+          },
+          "D2": {
+            "mc_seed": 28202,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.834110234102415,
+            "standard_error": 0.0036050683642770698,
+            "mc_mean_95_interval": [
+              15.827044300108431,
+              15.841176168096398
+            ],
+            "absolute_gap": 1.0784247995417218,
+            "eta": 0.06810769810223279
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 3,
+          "oracle_risk": 15.493065101389647,
+          "D1": {
+            "random_run_risks": [
+              16.372582507546863,
+              16.230107980137753,
+              16.243697440945123
+            ],
+            "random_mean_risk": 16.282129309543247,
+            "absolute_gap": 0.7890642081536008,
+            "eta": 0.04846197896801594
+          },
+          "D2": {
+            "mc_seed": 28203,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.317623227329697,
+            "standard_error": 0.0028536726010073184,
+            "mc_mean_95_interval": [
+              16.312030029031725,
+              16.32321642562767
+            ],
+            "absolute_gap": 0.824558125940051,
+            "eta": 0.05053175419316175
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 4,
+          "oracle_risk": 15.01633607451538,
+          "D1": {
+            "random_run_risks": [
+              16.55052040407477,
+              16.557653105939675,
+              16.63778930611763
+            ],
+            "random_mean_risk": 16.58198760537736,
+            "absolute_gap": 1.565651530861981,
+            "eta": 0.09441880962172816
+          },
+          "D2": {
+            "mc_seed": 28204,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.436144806208205,
+            "standard_error": 0.005903682151420126,
+            "mc_mean_95_interval": [
+              16.42457358919142,
+              16.447716023224988
+            ],
+            "absolute_gap": 1.4198087316928252,
+            "eta": 0.0863833184991495
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 5,
+          "oracle_risk": 15.485960814630731,
+          "D1": {
+            "random_run_risks": [
+              16.45666009279081,
+              16.628372490289095,
+              16.552285943948686
+            ],
+            "random_mean_risk": 16.545772842342867,
+            "absolute_gap": 1.0598120277121357,
+            "eta": 0.06405334086298668
+          },
+          "D2": {
+            "mc_seed": 28205,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.430688952070778,
+            "standard_error": 0.0034845478012429164,
+            "mc_mean_95_interval": [
+              16.42385923838034,
+              16.437518665761214
+            ],
+            "absolute_gap": 0.9447281374400465,
+            "eta": 0.05749777992851489
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 6,
+          "oracle_risk": 14.539101758106003,
+          "D1": {
+            "random_run_risks": [
+              15.35528982977531,
+              15.489771659453558,
+              15.788331012116743
+            ],
+            "random_mean_risk": 15.544464167115203,
+            "absolute_gap": 1.0053624090091997,
+            "eta": 0.06467655611674766
+          },
+          "D2": {
+            "mc_seed": 28206,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.596138543801038,
+            "standard_error": 0.003543107329877943,
+            "mc_mean_95_interval": [
+              15.589194053434477,
+              15.603083034167598
+            ],
+            "absolute_gap": 1.0570367856950345,
+            "eta": 0.06777554474310389
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 7,
+          "oracle_risk": 14.875928422066496,
+          "D1": {
+            "random_run_risks": [
+              15.868240206757509,
+              15.402846329180134,
+              15.701383666905725
+            ],
+            "random_mean_risk": 15.657490067614455,
+            "absolute_gap": 0.7815616455479599,
+            "eta": 0.049916151450386144
+          },
+          "D2": {
+            "mc_seed": 28207,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.733823828457947,
+            "standard_error": 0.0030912672824615754,
+            "mc_mean_95_interval": [
+              15.727764944584322,
+              15.739882712331571
+            ],
+            "absolute_gap": 0.8578954063914512,
+            "eta": 0.054525550542886214
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 8,
+          "oracle_risk": 15.859056421962338,
+          "D1": {
+            "random_run_risks": [
+              17.323227086435377,
+              17.263218936586632,
+              17.663918607660552
+            ],
+            "random_mean_risk": 17.41678821022752,
+            "absolute_gap": 1.5577317882651815,
+            "eta": 0.0894385215840454
+          },
+          "D2": {
+            "mc_seed": 28208,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 17.324381620366765,
+            "standard_error": 0.0044763950464072845,
+            "mc_mean_95_interval": [
+              17.315607886075806,
+              17.333155354657723
+            ],
+            "absolute_gap": 1.465325198404427,
+            "eta": 0.08458167399647742
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 9,
+          "oracle_risk": 13.900625833177134,
+          "D1": {
+            "random_run_risks": [
+              14.786250301167406,
+              14.88626453389957,
+              14.916995090417823
+            ],
+            "random_mean_risk": 14.863169975161599,
+            "absolute_gap": 0.9625441419844645,
+            "eta": 0.06476035351765526
+          },
+          "D2": {
+            "mc_seed": 28209,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 14.928287594234815,
+            "standard_error": 0.003498433490064204,
+            "mc_mean_95_interval": [
+              14.92143066459429,
+              14.93514452387534
+            ],
+            "absolute_gap": 1.027661761057681,
+            "eta": 0.06883989570609263
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        }
+      ],
+      "aggregate": {
+        "oracle_mean_risk": 14.84053090480764,
+        "D1": {
+          "random_mean_risk": 15.983572462390208,
+          "absolute_gap": 1.1430415575825688,
+          "eta": 0.07151352179071215,
+          "bootstrap": {
+            "seed": 28700,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.060682876642318855,
+              0.08338624116246549
+            ]
+          }
+        },
+        "D2": {
+          "random_mean_risk": 15.972618643774746,
+          "absolute_gap": 1.1320877389671065,
+          "eta": 0.07087677757888074,
+          "bootstrap": {
+            "seed": 28701,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.06150297513948021,
+              0.08139617295837767
+            ]
+          }
+        }
+      }
+    },
+    {
+      "cell": "G2_S2_D0_k10_N100",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "oracle_risk": 15.30142758459187,
+          "D1": {
+            "random_run_risks": [
+              17.32212597857773,
+              16.451283877159963,
+              17.21882484332503
+            ],
+            "random_mean_risk": 16.99741156635424,
+            "absolute_gap": 1.695983981762371,
+            "eta": 0.09977895605702163
+          },
+          "D2": {
+            "mc_seed": 28300,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 17.29181849506966,
+            "standard_error": 0.007375967268403146,
+            "mc_mean_95_interval": [
+              17.27736159922359,
+              17.30627539091573
+            ],
+            "absolute_gap": 1.9903909104777888,
+            "eta": 0.11510593353991659
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 1,
+          "oracle_risk": 17.32271299162454,
+          "D1": {
+            "random_run_risks": [
+              19.39615826846939,
+              19.028927872149257,
+              19.385556302932407
+            ],
+            "random_mean_risk": 19.27021414785035,
+            "absolute_gap": 1.9475011562258082,
+            "eta": 0.10106276667626228
+          },
+          "D2": {
+            "mc_seed": 28301,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 19.323332083136595,
+            "standard_error": 0.007185356833111451,
+            "mc_mean_95_interval": [
+              19.309248783743698,
+              19.337415382529493
+            ],
+            "absolute_gap": 2.0006190915120534,
+            "eta": 0.10353385652663842
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 2,
+          "oracle_risk": 14.263697991497963,
+          "D1": {
+            "random_run_risks": [
+              15.164518825583084,
+              15.163861553195508,
+              15.171860590847803
+            ],
+            "random_mean_risk": 15.166746989875463,
+            "absolute_gap": 0.9030489983774999,
+            "eta": 0.05954137686745409
+          },
+          "D2": {
+            "mc_seed": 28302,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.207104609075499,
+            "standard_error": 0.0031084798601853873,
+            "mc_mean_95_interval": [
+              15.201011988549535,
+              15.213197229601462
+            ],
+            "absolute_gap": 0.9434066175775353,
+            "eta": 0.06203722811339882
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 3,
+          "oracle_risk": 15.140864082110081,
+          "D1": {
+            "random_run_risks": [
+              15.758386613997066,
+              15.70661221697021,
+              15.819760089943765
+            ],
+            "random_mean_risk": 15.761586306970345,
+            "absolute_gap": 0.6207222248602644,
+            "eta": 0.03938196402133448
+          },
+          "D2": {
+            "mc_seed": 28303,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.831238013367651,
+            "standard_error": 0.0030017978813633925,
+            "mc_mean_95_interval": [
+              15.825354489520178,
+              15.837121537215124
+            ],
+            "absolute_gap": 0.6903739312575699,
+            "eta": 0.043608335031955735
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 4,
+          "oracle_risk": 16.00589234316274,
+          "D1": {
+            "random_run_risks": [
+              17.586154289019017,
+              17.36239177966425,
+              17.012700005529986
+            ],
+            "random_mean_risk": 17.320415358071084,
+            "absolute_gap": 1.314523014908346,
+            "eta": 0.07589442791831176
+          },
+          "D2": {
+            "mc_seed": 28304,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 17.40301877602219,
+            "standard_error": 0.004888538822218604,
+            "mc_mean_95_interval": [
+              17.39343723993064,
+              17.41260031211374
+            ],
+            "absolute_gap": 1.3971264328594515,
+            "eta": 0.0802806944496553
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 5,
+          "oracle_risk": 13.908087482988854,
+          "D1": {
+            "random_run_risks": [
+              14.720287176177456,
+              14.659293523955213,
+              14.667715873121175
+            ],
+            "random_mean_risk": 14.682432191084615,
+            "absolute_gap": 0.7743447080957608,
+            "eta": 0.052739539200184704
+          },
+          "D2": {
+            "mc_seed": 28305,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 14.659849463280251,
+            "standard_error": 0.0029000997368566262,
+            "mc_mean_95_interval": [
+              14.654165267796012,
+              14.66553365876449
+            ],
+            "absolute_gap": 0.7517619802913966,
+            "eta": 0.05128033423360844
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 6,
+          "oracle_risk": 16.243133472518846,
+          "D1": {
+            "random_run_risks": [
+              18.262248383099696,
+              17.812584998842624,
+              18.292238494280955
+            ],
+            "random_mean_risk": 18.122357292074426,
+            "absolute_gap": 1.8792238195555804,
+            "eta": 0.1036964335968276
+          },
+          "D2": {
+            "mc_seed": 28306,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 18.17842933486023,
+            "standard_error": 0.007390050915708992,
+            "mc_mean_95_interval": [
+              18.16394483506544,
+              18.19291383465502
+            ],
+            "absolute_gap": 1.935295862341384,
+            "eta": 0.10646111535225572
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 7,
+          "oracle_risk": 13.768079664462316,
+          "D1": {
+            "random_run_risks": [
+              14.513261691699629,
+              14.464421991522169,
+              14.572543116647664
+            ],
+            "random_mean_risk": 14.516742266623154,
+            "absolute_gap": 0.748662602160838,
+            "eta": 0.05157235613958378
+          },
+          "D2": {
+            "mc_seed": 28307,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 14.570389905766008,
+            "standard_error": 0.0033857130603033147,
+            "mc_mean_95_interval": [
+              14.563753908167813,
+              14.577025903364204
+            ],
+            "absolute_gap": 0.802310241303692,
+            "eta": 0.055064431802623895
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 8,
+          "oracle_risk": 15.043114348958131,
+          "D1": {
+            "random_run_risks": [
+              16.558776502997617,
+              16.270461457695628,
+              15.875279782872962
+            ],
+            "random_mean_risk": 16.234839247855405,
+            "absolute_gap": 1.1917248988972737,
+            "eta": 0.07340540184619929
+          },
+          "D2": {
+            "mc_seed": 28308,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.48782455538949,
+            "standard_error": 0.006235113088884387,
+            "mc_mean_95_interval": [
+              16.475603733735277,
+              16.500045377043705
+            ],
+            "absolute_gap": 1.4447102064313597,
+            "eta": 0.08762285173389459
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 9,
+          "oracle_risk": 14.314319021144009,
+          "D1": {
+            "random_run_risks": [
+              15.30288972501266,
+              15.414319592113507,
+              15.183786299392203
+            ],
+            "random_mean_risk": 15.30033187217279,
+            "absolute_gap": 0.9860128510287822,
+            "eta": 0.06444388652915926
+          },
+          "D2": {
+            "mc_seed": 28309,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 15.371749536342286,
+            "standard_error": 0.0037501964138422533,
+            "mc_mean_95_interval": [
+              15.364399151371154,
+              15.379099921313417
+            ],
+            "absolute_gap": 1.057430515198277,
+            "eta": 0.06879051162642695
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        }
+      ],
+      "aggregate": {
+        "oracle_mean_risk": 15.131132898305935,
+        "D1": {
+          "random_mean_risk": 16.337307723893186,
+          "absolute_gap": 1.2061748255872509,
+          "eta": 0.07382947337297378,
+          "bootstrap": {
+            "seed": 28702,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.06008492690583762,
+              0.08749122570845744
+            ]
+          }
+        },
+        "D2": {
+          "random_mean_risk": 16.432475477230987,
+          "absolute_gap": 1.301342578925052,
+          "eta": 0.07919333765190802,
+          "bootstrap": {
+            "seed": 28703,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.06385107229841769,
+              0.09375488935329866
+            ]
+          }
+        }
+      }
+    },
+    {
+      "cell": "G3_S2_D0_k10_N100",
+      "graphs": [
+        {
+          "graph_seed": 0,
+          "oracle_risk": 15.235437455894868,
+          "D1": {
+            "random_run_risks": [
+              16.185987794741138,
+              15.966686430007293,
+              16.28583722309353
+            ],
+            "random_mean_risk": 16.146170482613986,
+            "absolute_gap": 0.910733026719118,
+            "eta": 0.05640551285518663
+          },
+          "D2": {
+            "mc_seed": 28400,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.43133941107723,
+            "standard_error": 0.00817764715222569,
+            "mc_mean_95_interval": [
+              16.415311222658865,
+              16.447367599495593
+            ],
+            "absolute_gap": 1.1959019551823609,
+            "eta": 0.0727817693532726
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 1,
+          "oracle_risk": 15.412383551724705,
+          "D1": {
+            "random_run_risks": [
+              16.373118627593687,
+              16.234037109037352,
+              16.622469575836433
+            ],
+            "random_mean_risk": 16.409875104155827,
+            "absolute_gap": 0.9974915524311214,
+            "eta": 0.06078605389132457
+          },
+          "D2": {
+            "mc_seed": 28401,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.671864142247784,
+            "standard_error": 0.00936513775014991,
+            "mc_mean_95_interval": [
+              16.653508472257492,
+              16.690219812238077
+            ],
+            "absolute_gap": 1.2594805905230793,
+            "eta": 0.07554527674751492
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 2,
+          "oracle_risk": 15.315422973568223,
+          "D1": {
+            "random_run_risks": [
+              16.29128753418197,
+              16.141077347642454,
+              16.54944739282748
+            ],
+            "random_mean_risk": 16.327270758217303,
+            "absolute_gap": 1.0118477846490794,
+            "eta": 0.06197286733545652
+          },
+          "D2": {
+            "mc_seed": 28402,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.578581023219442,
+            "standard_error": 0.008706982774047016,
+            "mc_mean_95_interval": [
+              16.56151533698231,
+              16.595646709456574
+            ],
+            "absolute_gap": 1.263158049651219,
+            "eta": 0.0761921691538063
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 3,
+          "oracle_risk": 15.390319763808655,
+          "D1": {
+            "random_run_risks": [
+              16.474946087725865,
+              16.08766575728514,
+              16.7455201056402
+            ],
+            "random_mean_risk": 16.4360439835504,
+            "absolute_gap": 1.0457242197417465,
+            "eta": 0.06362383921510147
+          },
+          "D2": {
+            "mc_seed": 28403,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.634980816643534,
+            "standard_error": 0.009850032782298119,
+            "mc_mean_95_interval": [
+              16.61567475239023,
+              16.654286880896837
+            ],
+            "absolute_gap": 1.2446610528348785,
+            "eta": 0.07482191092096586
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 4,
+          "oracle_risk": 15.368014245301893,
+          "D1": {
+            "random_run_risks": [
+              16.568083609446113,
+              16.21349605368652,
+              16.955446955721797
+            ],
+            "random_mean_risk": 16.579008872951476,
+            "absolute_gap": 1.2109946276495833,
+            "eta": 0.07304384942005258
+          },
+          "D2": {
+            "mc_seed": 28404,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.715320108116373,
+            "standard_error": 0.009331448457256166,
+            "mc_mean_95_interval": [
+              16.697030469140152,
+              16.733609747092594
+            ],
+            "absolute_gap": 1.3473058628144798,
+            "eta": 0.0806030548084015
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 5,
+          "oracle_risk": 15.458865275648552,
+          "D1": {
+            "random_run_risks": [
+              16.70857775365199,
+              16.286721211330562,
+              16.64365360213198
+            ],
+            "random_mean_risk": 16.54631752237151,
+            "absolute_gap": 1.0874522467229575,
+            "eta": 0.0657217078816881
+          },
+          "D2": {
+            "mc_seed": 28405,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.776104690303104,
+            "standard_error": 0.009634755784215205,
+            "mc_mean_95_interval": [
+              16.75722056896604,
+              16.794988811640167
+            ],
+            "absolute_gap": 1.3172394146545514,
+            "eta": 0.07851878841790609
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 6,
+          "oracle_risk": 15.34862108871518,
+          "D1": {
+            "random_run_risks": [
+              16.409384970679735,
+              16.172209367157034,
+              16.93710499693879
+            ],
+            "random_mean_risk": 16.506233111591854,
+            "absolute_gap": 1.1576120228766733,
+            "eta": 0.07013181111950464
+          },
+          "D2": {
+            "mc_seed": 28406,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.636092545900794,
+            "standard_error": 0.009142337589374017,
+            "mc_mean_95_interval": [
+              16.61817356422562,
+              16.654011527575967
+            ],
+            "absolute_gap": 1.2874714571856138,
+            "eta": 0.07739025577270262
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 7,
+          "oracle_risk": 15.422999750165049,
+          "D1": {
+            "random_run_risks": [
+              16.31226328330597,
+              16.33162902546965,
+              16.77269617697725
+            ],
+            "random_mean_risk": 16.472196161917623,
+            "absolute_gap": 1.0491964117525736,
+            "eta": 0.06369499254618097
+          },
+          "D2": {
+            "mc_seed": 28407,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.69720476907304,
+            "standard_error": 0.009171418708392937,
+            "mc_mean_95_interval": [
+              16.67922878840459,
+              16.71518074974149
+            ],
+            "absolute_gap": 1.27420501890799,
+            "eta": 0.07631247484417888
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        },
+        {
+          "graph_seed": 8,
+          "oracle_risk": 15.582132685472235,
+          "D1": {
+            "random_run_risks": [
+              17.18923390654934,
+              16.70635116380531,
+              17.315000870040457
+            ],
+            "random_mean_risk": 17.070195313465035,
+            "absolute_gap": 1.4880626279928002,
+            "eta": 0.08717314598146458
+          },
+          "D2": {
+            "mc_seed": 28408,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 17.090282560781954,
+            "standard_error": 0.011721926834336493,
+            "mc_mean_95_interval": [
+              17.067307584186654,
+              17.113257537377255
+            ],
+            "absolute_gap": 1.5081498753097193,
+            "eta": 0.08824604683661327
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": false
+        },
+        {
+          "graph_seed": 9,
+          "oracle_risk": 15.28371176488785,
+          "D1": {
+            "random_run_risks": [
+              16.0784558835593,
+              15.968031619081673,
+              16.44341638731435
+            ],
+            "random_mean_risk": 16.163301296651774,
+            "absolute_gap": 0.8795895317639246,
+            "eta": 0.05441892813976879
+          },
+          "D2": {
+            "mc_seed": 28409,
+            "uniform_k_subsets": 2000,
+            "random_mean_risk": 16.462899505282177,
+            "standard_error": 0.009189907316855744,
+            "mc_mean_95_interval": [
+              16.44488728694114,
+              16.480911723623215
+            ],
+            "absolute_gap": 1.1791877403943278,
+            "eta": 0.07162697798258329
+          },
+          "d1_random_mean_outside_d2_mc_mean_95_interval": true
+        }
+      ],
+      "aggregate": {
+        "oracle_mean_risk": 15.381790855518721,
+        "D1": {
+          "random_mean_risk": 16.46566126074868,
+          "absolute_gap": 1.0838704052299573,
+          "eta": 0.06582610853374708,
+          "bootstrap": {
+            "seed": 28704,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.060816524819868024,
+              0.07193997776962432
+            ]
+          }
+        },
+        "D2": {
+          "random_mean_risk": 16.669466957264543,
+          "absolute_gap": 1.2876761017458218,
+          "eta": 0.0772475871632268,
+          "bootstrap": {
+            "seed": 28705,
+            "replicates": 10000,
+            "unit": "graph",
+            "resampling": "with replacement within cell",
+            "percentile_interval": [
+              0.07476716998967856,
+              0.08028075698974484
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "pooled_30_graphs": {
+    "oracle_mean_risk": 15.117818219544096,
+    "D1": {
+      "random_mean_risk": 16.26218048234402,
+      "absolute_gap": 1.144362262799925,
+      "eta": 0.07036954632512954
+    },
+    "D2": {
+      "random_mean_risk": 16.35818702609009,
+      "absolute_gap": 1.2403688065459928,
+      "eta": 0.07582556701226713
+    }
+  },
+  "ETA_DENOM_SPLIT": true,
+  "ETA_DENOM_SPLIT_rule": "true iff at least one graph's D1 mean lies outside the D2 Monte Carlo mean plus/minus 1.96 standard errors",
+  "materially_different_graph_count": 29,
+  "paraphrase_fidelity": {
+    "translated_bound": 0.021,
+    "D1_cell_eta_range": [
+      0.06582610853374708,
+      0.07382947337297378
+    ],
+    "D2_cell_eta_range": [
+      0.07087677757888074,
+      0.07919333765190802
+    ],
+    "translated_value_in_D1_cell_range": false,
+    "translated_value_in_D2_cell_range": false,
+    "D1_supports_all_cells_at_or_below_bound": false,
+    "D2_supports_all_cells_at_or_below_bound": false,
+    "closer_reading_by_distance_to_cell_range": "D1",
+    "PARAPHRASE_FIDELITY_ETA": "不符"
+  },
+  "best_deployment_oracle_gaps_from_existing_report": [
+    0.0249,
+    0.0578,
+    0.0965
+  ],
+  "best_deployment_gap_note": "These are best-deployment R(S) minus oracle R(S), not eta numerators or denominators.",
+  "no_new_selection_or_reconstruction_experiment": true,
+  "git_commit_at_generation": "cf8a7a25fc5986e73824a502f211706a36a7347d",
+  "thread_config": {
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  }
+}

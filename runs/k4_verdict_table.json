@@ -1,0 +1,806 @@
+{
+  "readings": {
+    "S": "同向读法：同一方向有方向的 cell 数达到分支阈值",
+    "E": "存在读法：方向不限的有方向 cell 数达到分支阈值"
+  },
+  "pairs": [
+    {
+      "pair_id": "Random__Degree",
+      "X": "Random",
+      "Y": "Degree",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 8,
+          "n_Y_better": 0,
+          "n_same_direction_max": 8,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 8,
+          "n_Y_better": 0,
+          "n_same_direction_max": 8,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 2,
+          "n_X_better": 2,
+          "n_Y_better": 0,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Random__B3a",
+      "X": "Random",
+      "Y": "B3a",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 0,
+          "n_Y_better": 9,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 0,
+          "n_Y_better": 9,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 6,
+          "n_X_better": 0,
+          "n_Y_better": 6,
+          "n_same_direction_max": 6,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Random__B3b",
+      "X": "Random",
+      "Y": "B3b",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 4,
+          "n_X_better": 2,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "X_better",
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 3,
+          "n_X_better": 2,
+          "n_Y_better": 1,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 0,
+          "n_X_better": 0,
+          "n_Y_better": 0,
+          "n_same_direction_max": 0,
+          "same_direction_max_directions": [],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Random__B3c",
+      "X": "Random",
+      "Y": "B3c",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 0,
+          "n_Y_better": 7,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 0,
+          "n_Y_better": 7,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 2,
+          "n_X_better": 0,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Random__CEM",
+      "X": "Random",
+      "Y": "CEM",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 5,
+          "n_X_better": 0,
+          "n_Y_better": 5,
+          "n_same_direction_max": 5,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 4,
+          "n_X_better": 0,
+          "n_Y_better": 4,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 2,
+          "n_X_better": 0,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Degree__B3a",
+      "X": "Degree",
+      "Y": "B3a",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 0,
+          "n_Y_better": 9,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 0,
+          "n_Y_better": 9,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 6,
+          "n_X_better": 0,
+          "n_Y_better": 6,
+          "n_same_direction_max": 6,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Degree__B3b",
+      "X": "Degree",
+      "Y": "B3b",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 0,
+          "n_Y_better": 9,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 0,
+          "n_Y_better": 7,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 4,
+          "n_X_better": 0,
+          "n_Y_better": 4,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "Degree__B3c",
+      "X": "Degree",
+      "Y": "B3c",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 0,
+          "n_Y_better": 8,
+          "n_same_direction_max": 8,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 0,
+          "n_Y_better": 8,
+          "n_same_direction_max": 8,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 6,
+          "n_X_better": 2,
+          "n_Y_better": 4,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": true
+        }
+      },
+      "READING_SPLIT": true,
+      "READING_SPLIT_branches": [
+        "branch_3_misspec"
+      ]
+    },
+    {
+      "pair_id": "Degree__CEM",
+      "X": "Degree",
+      "Y": "CEM",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 0,
+          "n_Y_better": 8,
+          "n_same_direction_max": 8,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 0,
+          "n_Y_better": 7,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 3,
+          "n_X_better": 0,
+          "n_Y_better": 3,
+          "n_same_direction_max": 3,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "B3a__B3b",
+      "X": "B3a",
+      "Y": "B3b",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 9,
+          "n_X_better": 9,
+          "n_Y_better": 0,
+          "n_same_direction_max": 9,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 7,
+          "n_Y_better": 0,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 6,
+          "n_X_better": 6,
+          "n_Y_better": 0,
+          "n_same_direction_max": 6,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "B3a__B3c",
+      "X": "B3a",
+      "Y": "B3c",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 5,
+          "n_X_better": 3,
+          "n_Y_better": 2,
+          "n_same_direction_max": 3,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 6,
+          "n_X_better": 3,
+          "n_Y_better": 3,
+          "n_same_direction_max": 3,
+          "same_direction_max_directions": [
+            "X_better",
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 4,
+          "n_X_better": 4,
+          "n_Y_better": 0,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": true,
+      "READING_SPLIT_branches": [
+        "branch_2_rho15"
+      ]
+    },
+    {
+      "pair_id": "B3a__CEM",
+      "X": "B3a",
+      "Y": "CEM",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 8,
+          "n_X_better": 7,
+          "n_Y_better": 1,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 6,
+          "n_Y_better": 1,
+          "n_same_direction_max": 6,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 3,
+          "n_X_better": 3,
+          "n_Y_better": 0,
+          "n_same_direction_max": 3,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "B3b__B3c",
+      "X": "B3b",
+      "Y": "B3c",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 7,
+          "n_X_better": 0,
+          "n_Y_better": 7,
+          "n_same_direction_max": 7,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 6,
+          "n_X_better": 0,
+          "n_Y_better": 6,
+          "n_same_direction_max": 6,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": true,
+          "reading_E": true
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 4,
+          "n_X_better": 2,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "X_better",
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "B3b__CEM",
+      "X": "B3b",
+      "Y": "CEM",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 5,
+          "n_X_better": 1,
+          "n_Y_better": 4,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 4,
+          "n_X_better": 0,
+          "n_Y_better": 4,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 2,
+          "n_X_better": 0,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    },
+    {
+      "pair_id": "B3c__CEM",
+      "X": "B3c",
+      "Y": "CEM",
+      "branches": {
+        "branch_1_D0": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 5,
+          "n_X_better": 4,
+          "n_Y_better": 1,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_2_rho15": {
+          "n_cells": 9,
+          "threshold": 6,
+          "n_directional": 4,
+          "n_X_better": 4,
+          "n_Y_better": 0,
+          "n_same_direction_max": 4,
+          "same_direction_max_directions": [
+            "X_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        },
+        "branch_3_misspec": {
+          "n_cells": 6,
+          "threshold": 5,
+          "n_directional": 3,
+          "n_X_better": 1,
+          "n_Y_better": 2,
+          "n_same_direction_max": 2,
+          "same_direction_max_directions": [
+            "Y_better"
+          ],
+          "reading_S": false,
+          "reading_E": false
+        }
+      },
+      "READING_SPLIT": false,
+      "READING_SPLIT_branches": []
+    }
+  ],
+  "summary": {
+    "branch_1_D0": {
+      "reading_S_pairs": [
+        "Random__Degree",
+        "Random__B3a",
+        "Random__B3c",
+        "Degree__B3a",
+        "Degree__B3b",
+        "Degree__B3c",
+        "Degree__CEM",
+        "B3a__B3b",
+        "B3a__CEM",
+        "B3b__B3c"
+      ],
+      "reading_E_pairs": [
+        "Random__Degree",
+        "Random__B3a",
+        "Random__B3c",
+        "Degree__B3a",
+        "Degree__B3b",
+        "Degree__B3c",
+        "Degree__CEM",
+        "B3a__B3b",
+        "B3a__CEM",
+        "B3b__B3c"
+      ]
+    },
+    "branch_2_rho15": {
+      "reading_S_pairs": [
+        "Random__Degree",
+        "Random__B3a",
+        "Random__B3c",
+        "Degree__B3a",
+        "Degree__B3b",
+        "Degree__B3c",
+        "Degree__CEM",
+        "B3a__B3b",
+        "B3a__CEM",
+        "B3b__B3c"
+      ],
+      "reading_E_pairs": [
+        "Random__Degree",
+        "Random__B3a",
+        "Random__B3c",
+        "Degree__B3a",
+        "Degree__B3b",
+        "Degree__B3c",
+        "Degree__CEM",
+        "B3a__B3b",
+        "B3a__B3c",
+        "B3a__CEM",
+        "B3b__B3c"
+      ]
+    },
+    "branch_3_misspec": {
+      "reading_S_pairs": [
+        "Random__B3a",
+        "Degree__B3a",
+        "B3a__B3b"
+      ],
+      "reading_E_pairs": [
+        "Random__B3a",
+        "Degree__B3a",
+        "Degree__B3c",
+        "B3a__B3b"
+      ]
+    }
+  },
+  "READING_SPLIT_pairs": [
+    "Degree__B3c",
+    "B3a__B3c"
+  ],
+  "anomalies": []
+}

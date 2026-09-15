@@ -1,0 +1,261 @@
+{
+  "block": "A",
+  "cem_budget_gate_passed": true,
+  "completed": [
+    {
+      "baseline_file": "runs\\A_G1_S1_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S1_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S1_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "e0a72e97484fa28d2374b635a2723d1fc719f25a3047a0b81ec9081a600e5c34"
+    },
+    {
+      "baseline_file": "runs\\A_G1_S1_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S1_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S1_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "f2880aa2a55204ee3c476a18442c71cd0e3ea1be098242abc890e428e4c75806"
+    },
+    {
+      "baseline_file": "runs\\A_G1_S2_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S2_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S2_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "c059e1706f18d5e9f5b45ded42358ac18f9439e072d7968bc9e0110942c03481"
+    },
+    {
+      "baseline_file": "runs\\A_G1_S2_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S2_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S2_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "3faf866c5cbe488284f9b081839ce5bf2f5573d53dd837f77f01879dc105f329"
+    },
+    {
+      "baseline_file": "runs\\A_G1_S3_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S3_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S3_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "93c6be4610128a0f7f155a59ea8e06a1e86c0005dc0fd50133c185b2adee9aa8"
+    },
+    {
+      "baseline_file": "runs\\A_G1_S3_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G1_S3_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G1_S3_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "fe9e567ed752ed56ddf293dfcd659c5dac5af8305969c679f68797464e60b2d5"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S1_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S1_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S1_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "a101c3ad6be6935fc39f5eac6217f889185260af5b831d5b6dbc47d15e31f9c1"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S1_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S1_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S1_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "1080c2e57604c05c7fcbe7b934395b1dd757c5d323039b6e59a8b85f8db813ea"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S2_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S2_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S2_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "429077f0d83395526eeae88d88c8d4014c80d868c5fb9f982d1d1d632b3e4521"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S2_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S2_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S2_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "a47320f483d205824e837d294aa4992d508b9bd647f31e838a4540ce9f0680df"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S3_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S3_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S3_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "dc533036eb0a27b69b10e2d1bd8da0b9c6a375d5b4e2c89c2975bef54c34d819"
+    },
+    {
+      "baseline_file": "runs\\A_G2_S3_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G2_S3_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G2_S3_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "b1ed262f5713162fbe6b719313f6468f785575ea6fcb11920dab9d5c0d3de997"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S1_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S1_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S1_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "6e1a8a00fa52b8b71497476de7a2357f248b5ae04e185f385d2a26becf86d71a"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S1_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S1_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S1_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "414f2fb6db7422af76a1ed50c72615f9c91e06e343c9c6232c91a0c2b255750c"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S2_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S2_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S2_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "d3ba2af909532a635736d442885947d7581c793b2b1e47da63022a60dc475823"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S2_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S2_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S2_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "4550183469f75d99c378585266964bec063ad87329ac3c02d9e11de5bdcf423c"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S3_D0_k5.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S3_D0_k5",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S3_D0_k5.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "733428b24249febbfc2d34a149cd2e4e1aca4702351d452ced8a3f0d84e45a0f"
+    },
+    {
+      "baseline_file": "runs\\A_G3_S3_D0_k20.jsonl",
+      "baseline_runs": 70,
+      "cell_id": "A_G3_S3_D0_k20",
+      "cem_eval_count_values": [
+        2000
+      ],
+      "cem_file": "runs\\sealed\\cem_A_G3_S3_D0_k20.jsonl",
+      "cem_runs": 30,
+      "cem_sha256": "21327006e24496cd1fb8a5bd3b397cea82f77f3e9bc7dfb8623b0dc7397085eb"
+    }
+  ],
+  "completed_new_cells": 18,
+  "compliance_checks": [
+    {
+      "a05_no_rerun_quote": "\u9644\u4e00\u6761\u7981\u4ee4\uff1a\u4e0d\u5f97\u4e3a\"\u9a8c\u8bc1\"\u800c\u8865\u8dd1 \u03bc=0.01 \u5bf9\u7167\u2014\u2014\u8dd1\u4e24\u7248\u518d\u6311\u5373 \u03bc-shopping\uff0c\u6bd4\u4efb\u4f55\u5355\u7248\u90fd\u7cdf\uff1b\u89c4\u5219\u5b9a\u4e8e\u539f\u7406\u3001\u6267\u884c\u6070\u4e00\u6b21\u3002",
+      "a05_platform_rule_quote": "\u5e73\u53f0\u70b9\u7684\u7cbe\u786e\u5b9a\u4e49\uff1a\u7b49\u6548\u533a = \u7f51\u683c\u4e0a NMSE \u2264 1.01 \u00d7 \u7f51\u683c\u6700\u5c0f\u503c\u7684\u70b9\u96c6\u4e2d\u5305\u542b argmin \u7684\u8fde\u7eed\u6bb5\uff1b\u5e73\u53f0\u70b9 = \u8be5\u6bb5\u5185\u6700\u5927 \u03bc\u3002\u9002\u7528\u4e8e\u5168\u90e8\u4e5d\u7ec4\u5408\u3002",
+      "kind": "start",
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "time": "2026-09-04T10:02:15.120193+08:00"
+    },
+    {
+      "d0_reuse_unchanged": true,
+      "dqn_implemented": false,
+      "kind": "final",
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1"
+      },
+      "time": "2026-09-04T10:11:54.582572+08:00"
+    }
+  ],
+  "d0_k10_reuse_fingerprints": {
+    "runs\\d0_G1_S1_k10_N100.jsonl": "6ea850142136c7e4132bd8e7e0138d90146a3889b43d95383426a659299baf06",
+    "runs\\d0_G1_S2_k10_N100_muREV.jsonl": "2ec91633503483e5dcab19792016fb500dd40243f458f5dbb14dbb4a13308246",
+    "runs\\d0_G1_S3_k10_N100.jsonl": "35107025be1f1b2904b5c3a7ac22e6f823b0da3f88a694421d71bf7d3f3bd8b1",
+    "runs\\d0_G2_S1_k10_N100.jsonl": "f5e6d6b08b0d38158a44085ec3c0b0d54f3d15cc4768b6f054e497b556ec0f5a",
+    "runs\\d0_G2_S2_k10_N100.jsonl": "cdaea67ad6815645794c178e40e43676bd3ba4378363507204dcff5ae93fa4d7",
+    "runs\\d0_G2_S3_k10_N100.jsonl": "176c7ac39b90aaccd7b1c696c48a896353f4689760faec8090e0514d85df2fa9",
+    "runs\\d0_G3_S1_k10_N100.jsonl": "0692c9734bb347c6912e6c32587c55d31e04e207c03a7b23b6da6d98e139c9b9",
+    "runs\\d0_G3_S2_k10_N100.jsonl": "934f1c68c2d7238f307e076070f82982e48bc16a8ea56032976db8b2ac76bc11",
+    "runs\\d0_G3_S3_k10_N100.jsonl": "713378db6b1d59aedd7d1a87aa9bcb782977f4531ac0bd34bc686b0333f3ff22",
+    "runs\\sealed\\cem_d0_G1_S1_k10_N100.jsonl": "bb96d824cecae4fd68520fc80509095f00d721a663e898f6e6a26a6fbe1a69c8",
+    "runs\\sealed\\cem_d0_G1_S2_k10_N100_muREV.jsonl": "e955818f46011eead6050b8c0c2585217f435f1ac15de18753ae9df28c0b6cc0",
+    "runs\\sealed\\cem_d0_G1_S3_k10_N100.jsonl": "5094245cb389833f0edd721390e6751008cbbcaefe909bc4f880f9de0683d448",
+    "runs\\sealed\\cem_d0_G2_S1_k10_N100.jsonl": "cd33b59e79aa3be7877c51fd6b1c471927fb45ed5fd6eea40c88c61537c2ab2c",
+    "runs\\sealed\\cem_d0_G2_S2_k10_N100.jsonl": "3c43c1202b0a6699c712def1ea15f0b0f831cf161c04e1fe0043d519797d3a61",
+    "runs\\sealed\\cem_d0_G2_S3_k10_N100.jsonl": "0431d5b74d5e646ab7b819b2d705eb2233a3f054fe401a5156266fe7000bf159",
+    "runs\\sealed\\cem_d0_G3_S1_k10_N100.jsonl": "2eb1f9a3e39ede739427ac8d56f1d7bd094794cf9a404104fbbe4743d4945b5a",
+    "runs\\sealed\\cem_d0_G3_S2_k10_N100.jsonl": "76a8ede58bf70c3ae580a74fba74264045eda480e9c9c69173eab37f45ec7d3d",
+    "runs\\sealed\\cem_d0_G3_S3_k10_N100.jsonl": "c2ed19066e7b8c03be699abc8d4a56b54c20acd21ddc49236568e2a3e0b066e3"
+  },
+  "diagnostic_gate_passed": true,
+  "expected_new_cells": 18,
+  "flags": [],
+  "git_commit": "41ec57967cf7723d1680b8c862838b683fb638d0",
+  "hostname": "DESKTOP-O16RHSN",
+  "reused_d0_k10_cells": 9,
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "wall_seconds": 579.4709219000069
+}

@@ -1,0 +1,169 @@
+{
+  "schema": "A34_EXIT_III_v1",
+  "authorization": "A-34 reading (iii), supplied in CODEX_A34_EXIT",
+  "calculation": "pure post-processing of ten per-graph R(S) values; no selection, reconstruction, training, or search",
+  "unit": "R(S): expected squared error of mu-regularized Laplacian least-squares reconstruction",
+  "formula": {
+    "gain": "mean(random R(S)) - mean(oracle R(S))",
+    "delta": "3 * (SD(random per-graph R(S)) + SD(oracle per-graph R(S)))",
+    "exit_A": "gain <= delta",
+    "exit_B": "gain > delta"
+  },
+  "inputs": {
+    "oracle": {
+      "path": "runs/oracle_risk_diagnostic.json",
+      "commit": "16ae25549d29d2746f6e061ef84e022426c7718b",
+      "sha256": "1b98f875da0255a8472a3e838b29442d4da62b23b83bb3bf1bf75c89802afc53",
+      "field": "cells[].graphs[].oracle_risk; cells[].graphs[].methods[best_deployment_method].per_graph_risk"
+    },
+    "random": {
+      "path": "runs/eta_bootstrap.json",
+      "commit": "4cc00719bb26a980716a0759568dfa24e99c8baa",
+      "sha256": "e46ec72ba4e4f59edcea349828fa0c602caf90240eeadfb104dc42d05c2a8184",
+      "field": "cells[].graphs[].D1.random_mean_risk; cells[].graphs[].D2.random_mean_risk"
+    },
+    "reading_i": {
+      "path": "DIAGNOSTICS_REPORT.md",
+      "commit": "8857f2c52f6bcf0f3a59bf53a6bda2d108e94132",
+      "sha256": "2ab9d35246c9417ef7d70552e78702da2f3f0c852fbdc11f90c00cd531cbe774",
+      "location": "section 1.2, lines 32-38"
+    }
+  },
+  "cells": [
+    {
+      "cell": "G1_S2_D0_k10_N100",
+      "graph_count": 10,
+      "means": {"oracle": 14.8405309048076, "D1_random": 15.9835724623902, "D2_random": 15.9726186437747},
+      "sd": {
+        "oracle": {"ddof0": 0.603788538898434, "ddof1": 0.636449002674741},
+        "D1_random": {"ddof0": 0.714356628576427, "ddof1": 0.752998002646812},
+        "D2_random": {"ddof0": 0.669981452973576, "ddof1": 0.706222460488497}
+      },
+      "gains": {"D1": 1.14304155758257, "D2": 1.13208773896711},
+      "reading_i": {
+        "pair": "best deployment (B3c), oracle",
+        "gain": 0.0248646556940813,
+        "delta_ddof0": 3.71942049013245,
+        "delta_ddof1": 3.92061344157279,
+        "exit_ddof0": "A",
+        "exit_ddof1": "A",
+        "source_location": "DIAGNOSTICS_REPORT.md lines 32-34"
+      },
+      "reading_ii": {
+        "comparison_only": true,
+        "category_error": "gain uses (random, oracle), delta uses (best deployment, oracle)",
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "gain": 1.14304155758257, "delta": 3.71942049013245, "ratio": 0.307317110451759},
+          {"denominator": "D1", "ddof": 1, "gain": 1.14304155758257, "delta": 3.92061344157279, "ratio": 0.291546609890729},
+          {"denominator": "D2", "ddof": 0, "gain": 1.13208773896711, "delta": 3.71942049013245, "ratio": 0.304372076771238},
+          {"denominator": "D2", "ddof": 1, "gain": 1.13208773896711, "delta": 3.92061344157279, "ratio": 0.288752705625823}
+        ]
+      },
+      "reading_iii": {
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "sd_random": 0.714356628576427, "sd_oracle": 0.603788538898434, "gain": 1.14304155758257, "delta": 3.95443550242458, "ratio": 0.289053028398551, "exit": "A"},
+          {"denominator": "D1", "ddof": 1, "sd_random": 0.752998002646812, "sd_oracle": 0.636449002674741, "gain": 1.14304155758257, "delta": 4.16834101596466, "ratio": 0.274219780292626, "exit": "A"},
+          {"denominator": "D2", "ddof": 0, "sd_random": 0.669981452973576, "sd_oracle": 0.603788538898434, "gain": 1.13208773896711, "delta": 3.82130997561603, "ratio": 0.296256452941796, "exit": "A"},
+          {"denominator": "D2", "ddof": 1, "sd_random": 0.706222460488497, "sd_oracle": 0.636449002674741, "gain": 1.13208773896711, "delta": 4.02801438948971, "ratio": 0.28105354884557, "exit": "A"}
+        ],
+        "DDOF_SPLIT": false,
+        "EXIT_SPLIT": false,
+        "cell_exit": "A",
+        "ratio_min": 0.274219780292626,
+        "ratio_max": 0.296256452941796
+      },
+      "TRANSCRIPTION_MISMATCH": false
+    },
+    {
+      "cell": "G2_S2_D0_k10_N100",
+      "graph_count": 10,
+      "means": {"oracle": 15.1311328983059, "D1_random": 16.3373077238932, "D2_random": 16.432475477231},
+      "sd": {
+        "oracle": {"ddof0": 1.0777289707382, "ddof1": 1.13602608262722},
+        "D1_random": {"ddof0": 1.48428897646711, "ddof1": 1.56457795717204},
+        "D2_random": {"ddof0": 1.50620783630322, "ddof1": 1.58768246410407}
+      },
+      "gains": {"D1": 1.20617482558725, "D2": 1.30134257892505},
+      "reading_i": {
+        "pair": "best deployment (B3c), oracle",
+        "gain": 0.0578408137597357,
+        "delta_ddof0": 6.42261782899654,
+        "delta_ddof1": 6.77003362681163,
+        "exit_ddof0": "A",
+        "exit_ddof1": "A",
+        "source_location": "DIAGNOSTICS_REPORT.md lines 32-35"
+      },
+      "reading_ii": {
+        "comparison_only": true,
+        "category_error": "gain uses (random, oracle), delta uses (best deployment, oracle)",
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "gain": 1.20617482558725, "delta": 6.42261782899654, "ratio": 0.187801120618086},
+          {"denominator": "D1", "ddof": 1, "gain": 1.20617482558725, "delta": 6.77003362681163, "ratio": 0.178163786485548},
+          {"denominator": "D2", "ddof": 0, "gain": 1.30134257892505, "delta": 6.42261782899654, "ratio": 0.202618716164273},
+          {"denominator": "D2", "ddof": 1, "gain": 1.30134257892505, "delta": 6.77003362681163, "ratio": 0.192220991897484}
+        ]
+      },
+      "reading_iii": {
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "sd_random": 1.48428897646711, "sd_oracle": 1.0777289707382, "gain": 1.20617482558725, "delta": 7.68605384161591, "ratio": 0.156930311762384, "exit": "A"},
+          {"denominator": "D1", "ddof": 1, "sd_random": 1.56457795717204, "sd_oracle": 1.13602608262722, "gain": 1.20617482558725, "delta": 8.10181211939778, "ratio": 0.148877165726833, "exit": "A"},
+          {"denominator": "D2", "ddof": 0, "sd_random": 1.50620783630322, "sd_oracle": 1.0777289707382, "gain": 1.30134257892505, "delta": 7.75181042112424, "ratio": 0.167875955193486, "exit": "A"},
+          {"denominator": "D2", "ddof": 1, "sd_random": 1.58768246410407, "sd_oracle": 1.13602608262722, "gain": 1.30134257892505, "delta": 8.17112564019387, "ratio": 0.159261114836337, "exit": "A"}
+        ],
+        "DDOF_SPLIT": false,
+        "EXIT_SPLIT": false,
+        "cell_exit": "A",
+        "ratio_min": 0.148877165726833,
+        "ratio_max": 0.167875955193486
+      },
+      "TRANSCRIPTION_MISMATCH": false
+    },
+    {
+      "cell": "G3_S2_D0_k10_N100",
+      "graph_count": 10,
+      "means": {"oracle": 15.3817908555187, "D1_random": 16.4656612607487, "D2_random": 16.6694669572645},
+      "sd": {
+        "oracle": {"ddof0": 0.0924757769240763, "ddof1": 0.0974780278245737},
+        "D1_random": {"ddof0": 0.245589175129434, "ddof1": 0.258873720696997},
+        "D2_random": {"ddof0": 0.173572250409411, "ddof1": 0.182961216631611}
+      },
+      "gains": {"D1": 1.08387040522996, "D2": 1.28767610174582},
+      "reading_i": {
+        "pair": "best deployment (B3a), oracle",
+        "gain": 0.0965289664231932,
+        "delta_ddof0": 0.561155328636692,
+        "delta_ddof1": 0.591509653210752,
+        "exit_ddof0": "A",
+        "exit_ddof1": "A",
+        "source_location": "DIAGNOSTICS_REPORT.md lines 32-36"
+      },
+      "reading_ii": {
+        "comparison_only": true,
+        "category_error": "gain uses (random, oracle), delta uses (best deployment, oracle)",
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "gain": 1.08387040522996, "delta": 0.561155328636692, "ratio": 1.93149801831729},
+          {"denominator": "D1", "ddof": 1, "gain": 1.08387040522996, "delta": 0.591509653210752, "ratio": 1.83237991019528},
+          {"denominator": "D2", "ddof": 0, "gain": 1.28767610174582, "delta": 0.561155328636692, "ratio": 2.29468747071187},
+          {"denominator": "D2", "ddof": 1, "gain": 1.28767610174582, "delta": 0.591509653210752, "ratio": 2.17693167771013}
+        ]
+      },
+      "reading_iii": {
+        "combinations": [
+          {"denominator": "D1", "ddof": 0, "sd_random": 0.245589175129434, "sd_oracle": 0.0924757769240763, "gain": 1.08387040522996, "delta": 1.01419485616053, "ratio": 1.06870035737826, "exit": "B"},
+          {"denominator": "D1", "ddof": 1, "sd_random": 0.258873720696997, "sd_oracle": 0.0974780278245737, "gain": 1.08387040522996, "delta": 1.06905524556471, "ratio": 1.01385817966537, "exit": "B"},
+          {"denominator": "D2", "ddof": 0, "sd_random": 0.173572250409411, "sd_oracle": 0.0924757769240763, "gain": 1.28767610174582, "delta": 0.798144082000462, "ratio": 1.61333790575556, "exit": "B"},
+          {"denominator": "D2", "ddof": 1, "sd_random": 0.182961216631611, "sd_oracle": 0.0974780278245737, "gain": 1.28767610174582, "delta": 0.841317733368553, "ratio": 1.5305467253021, "exit": "B"}
+        ],
+        "DDOF_SPLIT": false,
+        "EXIT_SPLIT": false,
+        "cell_exit": "B",
+        "ratio_min": 1.01385817966537,
+        "ratio_max": 1.61333790575556
+      },
+      "TRANSCRIPTION_MISMATCH": false
+    }
+  ],
+  "cross_cell_summary_permitted": false,
+  "reason_cross_cell_summary_not_permitted": "the three cells do not share one exit across all four combinations",
+  "no_experiment_run": true
+}

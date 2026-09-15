@@ -1,0 +1,92 @@
+{
+  "budget_gate_checked": true,
+  "budget_gate_passed": true,
+  "completed": [
+    {
+      "file": "runs/sealed/cem_d0_G1_S1_k10_N100.jsonl",
+      "graph_family": "G1",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G1_S2_k10_N100_muLIT.jsonl.VOID",
+      "graph_family": "G1",
+      "mu_variant": "LIT",
+      "runs": 30,
+      "void": true,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G1_S2_k10_N100_muREV.jsonl",
+      "graph_family": "G1",
+      "mu_variant": "REV",
+      "runs": 30,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G1_S3_k10_N100.jsonl",
+      "graph_family": "G1",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S3"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G2_S1_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G2_S2_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G2_S3_k10_N100.jsonl",
+      "graph_family": "G2",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S3"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G3_S1_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S1"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G3_S2_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S2"
+    },
+    {
+      "file": "runs/sealed/cem_d0_G3_S3_k10_N100.jsonl",
+      "graph_family": "G3",
+      "mu_variant": null,
+      "runs": 30,
+      "signal_family": "S3"
+    }
+  ],
+  "completed_logical_cells": 9,
+  "completed_physical_cells": 10,
+  "eval_count_runs_audited": 300,
+  "eval_count_values": [
+    2000
+  ],
+  "git_commit": "b9febac85bf68b2874884c90ef2de4c6d9e28b7f",
+  "hostname": "DESKTOP-O16RHSN",
+  "interrupted_not_started": [],
+  "thread_config": {
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "wall_seconds": 1448.6797091999906
+}

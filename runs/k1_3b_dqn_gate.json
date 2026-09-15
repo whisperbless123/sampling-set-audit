@@ -1,0 +1,112 @@
+{
+  "gate": "K1③-b",
+  "authorization": "A-14④",
+  "generated_at": "2026-09-05T05:55:10+08:00",
+  "passed": true,
+  "counter_audit": {
+    "passed": true,
+    "rows_audited": 450,
+    "rows_by_budget": {
+      "500": 90,
+      "2000": 270,
+      "8000": 90
+    },
+    "files": [
+      {
+        "path": "runs/sealed/dqn_d0_G1_S1_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "26c16bdadbf230211524adb273b6ff772785fe359cece454ceb92421a3c8ad89"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G1_S2_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "cda4a16f749bd3f8e0f609fa85b9aba0b1d700b27f838ac74acb8c822cd7fd75"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G1_S3_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "4ac38fb8357242280e6a316dce27d2bdff148b50293b635fef443ac6b74bbc93"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G2_S1_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "0caecc1556699a82fe69eedb649a205c316dab8e0f905eff1af0886b3161a1b0"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G2_S2_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "1fede462da3c35df692bd743e13b8a35771bd2eb4d4bf88de23afe510d82fe55"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G2_S3_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "72ddeaf8b99f3e62460565b7a0be4811243d40a0d8ab79d9fdb40f3d3d5b5729"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G3_S1_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "29d5b119c9dd5680515582aa186385c5e6e3deb0255fa6a37179edf9d31375ae"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G3_S2_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "270775683288be7568003991449d6e7459a89640c427e0d7099b9c52ef60d772"
+      },
+      {
+        "path": "runs/sealed/dqn_d0_G3_S3_k10_N100.jsonl",
+        "rows": 30,
+        "sha256": "8e0fa0d011a7a5373bccc02e44bc84d18c6110912bb571ddbf291a3a9d09e29d"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G1_S1_D0_k10_N100_E500.jsonl",
+        "rows": 30,
+        "sha256": "64a29a2f981e86319a0d88dc1d2d32a06df52cb09dce2704e42e5dbe91e93380"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G1_S1_D0_k10_N100_E8000.jsonl",
+        "rows": 30,
+        "sha256": "b7acd0f16d03e606adb9d0d0853af0d796aa92682788dc1089c5767ff599bf4d"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G2_S2_D0_k10_N100_E500.jsonl",
+        "rows": 30,
+        "sha256": "6db6c8bf71dd9d748a897f6e285268ab24290deddd19ed9e692c35a36fbbe3a2"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G2_S2_D0_k10_N100_E8000.jsonl",
+        "rows": 30,
+        "sha256": "41b1add00e7624db323d33e3ef50b02b0a0a18409e2ff28bad75c71bc77d7793"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G3_S3_D0_k10_N100_E500.jsonl",
+        "rows": 30,
+        "sha256": "ee150b94c91dc4d0c0159bd09735c8f16852f6577542f5844750049cb1e8b401"
+      },
+      {
+        "path": "runs/sealed/dqn_E_G3_S3_D0_k10_N100_E8000.jsonl",
+        "rows": 30,
+        "sha256": "f2fba5d3a33646a6c1281ef89ff8500a9d2248ae61f51d804714a020face1baa"
+      }
+    ]
+  },
+  "ast_audit": {
+    "passed": true,
+    "files_scanned": [
+      "src/methods/dqn.py",
+      "scripts/dqn_full_run.py"
+    ],
+    "forbidden_reconstruction_imports": 0,
+    "forbidden_reconstruction_calls": 0,
+    "evalcore_evaluate_call_sites": 1
+  },
+  "runtime_import_guard": {
+    "passed": true,
+    "module": "src.methods.dqn",
+    "blocked_modules": [
+      "reconstruct",
+      "src.reconstruct"
+    ]
+  },
+  "performance_fields_used": false,
+  "note": "Integrity-only audit; no NMSE value is emitted or used."
+}

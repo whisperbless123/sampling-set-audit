@@ -1,0 +1,258 @@
+{
+  "block": "D",
+  "n": 300,
+  "cells": [
+    "G1_S1",
+    "G2_S2",
+    "G3_S3"
+  ],
+  "methods": [
+    "Random",
+    "Degree",
+    "B3a",
+    "B3b",
+    "B3c",
+    "CEM"
+  ],
+  "dqn_included": false,
+  "dqn_exclusion_basis": "A-14② implementation scope names D0/Block A/B/C/Block E; v6 6-1 assigns DQN extension only to A/B/C",
+  "mu_values": {
+    "G1_S1": 0.01,
+    "G2_S2": 0.01,
+    "G3_S3": 0.1
+  },
+  "mu_recalibrated": false,
+  "connectivity_rejection_sampling": {
+    "G1": {
+      "attempts": 11,
+      "accepted_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        9,
+        10
+      ],
+      "rejected": [
+        {
+          "graph_family": "G1",
+          "graph_seed": 8,
+          "n": 300,
+          "components": 2,
+          "component_sizes": [
+            299,
+            1
+          ],
+          "path": "runs/blockD_rejected/G1_seed_8.json"
+        }
+      ],
+      "rejected_count": 1,
+      "g3_connectivity_exempt": false
+    },
+    "G2": {
+      "attempts": 10,
+      "accepted_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rejected": [],
+      "rejected_count": 0,
+      "g3_connectivity_exempt": false
+    },
+    "G3": {
+      "attempts": 10,
+      "accepted_seeds": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "rejected": [],
+      "rejected_count": 0,
+      "g3_connectivity_exempt": false
+    }
+  },
+  "g3_exemption": false,
+  "g3_exemption_reason": "Protocol section 2 names a Watts-Strogatz generator but does not literally guarantee connectivity; G3 therefore uses the same rejection rule.",
+  "a_s_singular": false,
+  "cem_eval_counts_exact": true,
+  "cem_performance_values_disclosed": false,
+  "scale_checks": [
+    {
+      "cell": "G1_S1",
+      "method": "Random",
+      "symmetric_fold_difference": 1.0423712425833302,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.8103005834219452,
+      "n100_mean": 0.7773627574507529
+    },
+    {
+      "cell": "G1_S1",
+      "method": "Degree",
+      "symmetric_fold_difference": 1.0600591245669848,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.9055287712227752,
+      "n100_mean": 0.854224778823226
+    },
+    {
+      "cell": "G1_S1",
+      "method": "B3a",
+      "symmetric_fold_difference": 1.2243807116357794,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.3421851289365071,
+      "n100_mean": 0.41896487167846147
+    },
+    {
+      "cell": "G1_S1",
+      "method": "B3b",
+      "symmetric_fold_difference": 1.058357567405952,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.8710542397811946,
+      "n100_mean": 0.8230245302787031
+    },
+    {
+      "cell": "G1_S1",
+      "method": "B3c",
+      "symmetric_fold_difference": 1.1202045597493253,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.39084675555367354,
+      "n100_mean": 0.437828317734455
+    },
+    {
+      "cell": "G1_S1",
+      "method": "CEM",
+      "symmetric_fold_difference": 1.177245051390767,
+      "scale_mu_mismatch": false,
+      "values_disclosed": false
+    },
+    {
+      "cell": "G2_S2",
+      "method": "Random",
+      "symmetric_fold_difference": 1.3584654473074043,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.5002107741644675,
+      "n100_mean": 0.3682175171668359
+    },
+    {
+      "cell": "G2_S2",
+      "method": "Degree",
+      "symmetric_fold_difference": 1.382357482864656,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.520027215547383,
+      "n100_mean": 0.3761886646497054
+    },
+    {
+      "cell": "G2_S2",
+      "method": "B3a",
+      "symmetric_fold_difference": 1.2986678548911972,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.457309481551689,
+      "n100_mean": 0.35213736894257885
+    },
+    {
+      "cell": "G2_S2",
+      "method": "B3b",
+      "symmetric_fold_difference": 1.3929724929186715,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.5125057099515872,
+      "n100_mean": 0.3679223477541489
+    },
+    {
+      "cell": "G2_S2",
+      "method": "B3c",
+      "symmetric_fold_difference": 1.3436212142187685,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.45940263349685156,
+      "n100_mean": 0.34191379879631134
+    },
+    {
+      "cell": "G2_S2",
+      "method": "CEM",
+      "symmetric_fold_difference": 1.3630898644619531,
+      "scale_mu_mismatch": false,
+      "values_disclosed": false
+    },
+    {
+      "cell": "G3_S3",
+      "method": "Random",
+      "symmetric_fold_difference": 1.2701662309730817,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.6473737194537232,
+      "n100_mean": 0.5096763743732712
+    },
+    {
+      "cell": "G3_S3",
+      "method": "Degree",
+      "symmetric_fold_difference": 1.257424129567852,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.6649452959741965,
+      "n100_mean": 0.5288154412964248
+    },
+    {
+      "cell": "G3_S3",
+      "method": "B3a",
+      "symmetric_fold_difference": 1.2764390076471874,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.6376636753751074,
+      "n100_mean": 0.4995645475849952
+    },
+    {
+      "cell": "G3_S3",
+      "method": "B3b",
+      "symmetric_fold_difference": 1.2746739706802837,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.6496890410740127,
+      "n100_mean": 0.5096903647661988
+    },
+    {
+      "cell": "G3_S3",
+      "method": "B3c",
+      "symmetric_fold_difference": 1.2609566250061177,
+      "scale_mu_mismatch": false,
+      "values_disclosed": true,
+      "n300_mean": 0.6389880426389575,
+      "n100_mean": 0.5067486303391739
+    },
+    {
+      "cell": "G3_S3",
+      "method": "CEM",
+      "symmetric_fold_difference": 1.2653017455128561,
+      "scale_mu_mismatch": false,
+      "values_disclosed": false
+    }
+  ],
+  "SCALE_MU_MISMATCH": false,
+  "wall_seconds": 275.10322000004817
+}

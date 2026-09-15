@@ -1,0 +1,139 @@
+{
+  "authorization": "A-12",
+  "unseal_time": "2026-09-04T21:42:34+08:00",
+  "execution_commit": "a7797bee3496a9621abcb2abf87533bfcee4e421",
+  "seal_record_commit": "7d3ecb4df7db31c2de49704491671e22a9708a26",
+  "scope": "runs/sealed/cem_B_*_rho5_* and cem_B_*_rho30_* only",
+  "expected_count_from_inventory": 18,
+  "actual_count": 18,
+  "hashes_matched": 18,
+  "files": [
+    {
+      "path": "runs/sealed/cem_B_G1_S1_DG_rho30_k10.jsonl",
+      "bytes": 88450,
+      "expected_sha256": "ab3d419ac38ac37b3784d72e3116b2b147aa99806413a41fa290e0a35115dd43",
+      "actual_sha256": "ab3d419ac38ac37b3784d72e3116b2b147aa99806413a41fa290e0a35115dd43",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G1_S1_DG_rho5_k10.jsonl",
+      "bytes": 88450,
+      "expected_sha256": "17f0593de467044ab2af36cd2848d780f4f69808a4807f36c8b72836eb6fd133",
+      "actual_sha256": "17f0593de467044ab2af36cd2848d780f4f69808a4807f36c8b72836eb6fd133",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G1_S2_DG_rho30_k10.jsonl",
+      "bytes": 88460,
+      "expected_sha256": "c9abbcbe9f4e5079d6ec78848fb9747b17f532e48d335f0b83b9790c74943dea",
+      "actual_sha256": "c9abbcbe9f4e5079d6ec78848fb9747b17f532e48d335f0b83b9790c74943dea",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G1_S2_DG_rho5_k10.jsonl",
+      "bytes": 88450,
+      "expected_sha256": "697006bb33827845c74e1e84ea9303e701b003871d1606a2e52952243bc21d07",
+      "actual_sha256": "697006bb33827845c74e1e84ea9303e701b003871d1606a2e52952243bc21d07",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G1_S3_DG_rho30_k10.jsonl",
+      "bytes": 88437,
+      "expected_sha256": "f1075057ab05f4a20f35143dc9cb53cd00d2acd20bbea430c9ce70b70e1d9d51",
+      "actual_sha256": "f1075057ab05f4a20f35143dc9cb53cd00d2acd20bbea430c9ce70b70e1d9d51",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G1_S3_DG_rho5_k10.jsonl",
+      "bytes": 88446,
+      "expected_sha256": "0d37318e3cb77308d19c785a41c11b95a6a3233301057109a0377532596fa7ab",
+      "actual_sha256": "0d37318e3cb77308d19c785a41c11b95a6a3233301057109a0377532596fa7ab",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S1_DG_rho30_k10.jsonl",
+      "bytes": 88444,
+      "expected_sha256": "f309ca9dbca27c6b0df37dd679fceefb24196663afc369f3b112b5e25f679cd1",
+      "actual_sha256": "f309ca9dbca27c6b0df37dd679fceefb24196663afc369f3b112b5e25f679cd1",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S1_DG_rho5_k10.jsonl",
+      "bytes": 88451,
+      "expected_sha256": "31f2a90ee0a57848f4fcb156cdfc7515dab33cd08f0e14d8b60b4d0b65b3062c",
+      "actual_sha256": "31f2a90ee0a57848f4fcb156cdfc7515dab33cd08f0e14d8b60b4d0b65b3062c",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S2_DG_rho30_k10.jsonl",
+      "bytes": 88454,
+      "expected_sha256": "4f03f47b8113f00d23f5609162b509ab2993ebe1bfedcda14b1b1a0373b285bd",
+      "actual_sha256": "4f03f47b8113f00d23f5609162b509ab2993ebe1bfedcda14b1b1a0373b285bd",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S2_DG_rho5_k10.jsonl",
+      "bytes": 88467,
+      "expected_sha256": "42fd4211669cc54fc3bdf398cb89c4dfe747328105710c7d010e05efcf4062d5",
+      "actual_sha256": "42fd4211669cc54fc3bdf398cb89c4dfe747328105710c7d010e05efcf4062d5",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S3_DG_rho30_k10.jsonl",
+      "bytes": 88418,
+      "expected_sha256": "aeb4a60f3d6bad8f0ee62efaeea53ef644a0fa6780c0807c05c64d61c89c7e10",
+      "actual_sha256": "aeb4a60f3d6bad8f0ee62efaeea53ef644a0fa6780c0807c05c64d61c89c7e10",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G2_S3_DG_rho5_k10.jsonl",
+      "bytes": 88420,
+      "expected_sha256": "bfff414534adf28f210977c24266d457e7d341663563ea6c6b128d7e2034a7a0",
+      "actual_sha256": "bfff414534adf28f210977c24266d457e7d341663563ea6c6b128d7e2034a7a0",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S1_DG_rho30_k10.jsonl",
+      "bytes": 88458,
+      "expected_sha256": "0ecce352b1ebff1f15d2ac2a5ebdefaa54ae39542433b225617c64d8b2defac8",
+      "actual_sha256": "0ecce352b1ebff1f15d2ac2a5ebdefaa54ae39542433b225617c64d8b2defac8",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S1_DG_rho5_k10.jsonl",
+      "bytes": 88477,
+      "expected_sha256": "07ad7ee3e79de63f82b3a3efe75471692ce433a0ab6c1c6fcc7d484d8304836e",
+      "actual_sha256": "07ad7ee3e79de63f82b3a3efe75471692ce433a0ab6c1c6fcc7d484d8304836e",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S2_DG_rho30_k10.jsonl",
+      "bytes": 88468,
+      "expected_sha256": "a5c7be298bffa468e2b975643fb43e42447791d1a8022cf2028b7c760e76697c",
+      "actual_sha256": "a5c7be298bffa468e2b975643fb43e42447791d1a8022cf2028b7c760e76697c",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S2_DG_rho5_k10.jsonl",
+      "bytes": 88469,
+      "expected_sha256": "e593904879172e6ab020335fa24d57e9b91dec076ac929cad387a4ad29d1a820",
+      "actual_sha256": "e593904879172e6ab020335fa24d57e9b91dec076ac929cad387a4ad29d1a820",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S3_DG_rho30_k10.jsonl",
+      "bytes": 88455,
+      "expected_sha256": "3c376c6861f1e22c782f850d6ddf19ac3c6fc572bd73544166a59c9416674bca",
+      "actual_sha256": "3c376c6861f1e22c782f850d6ddf19ac3c6fc572bd73544166a59c9416674bca",
+      "match": true
+    },
+    {
+      "path": "runs/sealed/cem_B_G3_S3_DG_rho5_k10.jsonl",
+      "bytes": 88441,
+      "expected_sha256": "eb05bbc6a4a3d573347a5e3aa71df1812d2086405cc2c4b3c0042866c422471f",
+      "actual_sha256": "eb05bbc6a4a3d573347a5e3aa71df1812d2086405cc2c4b3c0042866c422471f",
+      "match": true
+    }
+  ],
+  "out_of_scope_k5_or_k20_touched": false
+}

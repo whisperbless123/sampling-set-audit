@@ -1,0 +1,19 @@
+{
+  "inputs": {
+    "runs/fig3_dose_table.json": {
+      "commit": "24713b48d5dd026bf3102d1f1b7f3e65ae2b790d",
+      "sha256": "bd8d277d6a7507cfbf391b7706b871f39fe977dc075291e7a839840ce9bdd76f",
+      "bytes": 95216
+    },
+    "runs/oracle_reference.json": {
+      "commit": "24713b48d5dd026bf3102d1f1b7f3e65ae2b790d",
+      "sha256": "1d6253fd82ebf6c1fe604dd916c762d5233af7dc94a77e8deff3dff4f1f94e60",
+      "bytes": 1303825
+    }
+  },
+  "script_sha256": "09e676fd9ba9f5060e050051097410bfa3b2fa727b51c4306e6daae7a35a9b32",
+  "source_rows": 162,
+  "reference_cells": 27,
+  "display_rows": 63,
+  "aggregation_is_not_a_claim": true
+}
